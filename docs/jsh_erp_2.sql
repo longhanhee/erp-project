@@ -619,74 +619,74 @@ CREATE TABLE `jsh_functions` (
   `State` bit(1) DEFAULT NULL COMMENT 'Co lại',
   `Sort` varchar(50) DEFAULT NULL COMMENT 'Sắp xếp',
   `Enabled` bit(1) DEFAULT NULL COMMENT 'Kích hoạt',
-  `Type` varchar(50) DEFAULT NULL COMMENT '类型',
-  `PushBtn` varchar(50) DEFAULT NULL COMMENT '功能按钮',
-  `icon` varchar(50) DEFAULT NULL COMMENT '图标',
-  `delete_Flag` varchar(1) DEFAULT '0' COMMENT '删除标记，0未删除，1删除',
+  `Type` varchar(50) DEFAULT NULL COMMENT 'Loại',
+  `PushBtn` varchar(50) DEFAULT NULL COMMENT 'Các nút chức năng',
+  `icon` varchar(50) DEFAULT NULL COMMENT 'Biểu tượng',
+  `delete_Flag` varchar(1) DEFAULT '0' COMMENT 'Xóa dấu, 0 không xóa, 1 xóa',
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=252 DEFAULT CHARSET=utf8 COMMENT='功能模块表';
+) ENGINE=InnoDB AUTO_INCREMENT=252 DEFAULT CHARSET=utf8 COMMENT='Bảng mô-đun chức năng';
 
 -- ----------------------------
 -- Records of jsh_functions
 -- ----------------------------
-INSERT INTO `jsh_functions` VALUES ('1', '0001', '系统管理', '0', '', '', '0910', '', '电脑版', '', 'icon-settings', '0');
-INSERT INTO `jsh_functions` VALUES ('13', '000102', '角色管理', '0001', '/pages/manage/role.html', '\0', '0130', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('14', '000103', '用户管理', '0001', '/pages/manage/user.html', '\0', '0140', '', '电脑版', null, 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('15', '000104', '日志管理', '0001', '/pages/manage/log.html', '\0', '0160', '', '电脑版', null, 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('16', '000105', '功能管理', '0001', '/pages/manage/functions.html', '\0', '0135', '', '电脑版', null, 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('21', '0101', '商品管理', '0', '', '\0', '0620', '', '电脑版', null, 'icon-social-dropbox', '0');
-INSERT INTO `jsh_functions` VALUES ('22', '010101', '商品类别', '0101', '/pages/materials/materialcategory.html', '\0', '0230', '', '电脑版', null, 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('23', '010102', '商品信息', '0101', '/pages/materials/material.html', '\0', '0240', '', '电脑版', null, 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('24', '0102', '基本资料', '0', '', '\0', '0750', '', '电脑版', null, 'icon-grid', '0');
-INSERT INTO `jsh_functions` VALUES ('25', '01020101', '供应商信息', '0102', '/pages/manage/vendor.html', '\0', '0260', '', '电脑版', '1,2', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('26', '010202', '仓库信息', '0102', '/pages/manage/depot.html', '\0', '0270', '', '电脑版', null, 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('31', '010206', '经手人管理', '0102', '/pages/materials/person.html', '\0', '0284', '', '电脑版', null, 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('32', '0502', 'Mua hàng管理', '0', '', '\0', '0330', '', '电脑版', '', 'icon-loop', '0');
+INSERT INTO `jsh_functions` VALUES ('1', '0001', 'Quản lý hệ thống', '0', '', '', '0910', '', '电脑版', '', 'icon-settings', '0');
+INSERT INTO `jsh_functions` VALUES ('13', '000102', 'Quản lý vai trò', '0001', '/pages/manage/role.html', '\0', '0130', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('14', '000103', 'Quản lý người dùng', '0001', '/pages/manage/user.html', '\0', '0140', '', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('15', '000104', 'Quản lý nhật ký', '0001', '/pages/manage/log.html', '\0', '0160', '', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('16', '000105', 'Quản lý chức năng', '0001', '/pages/manage/functions.html', '\0', '0135', '', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('21', '0101', 'Quản lý hàng hóa', '0', '', '\0', '0620', '', '电脑版', null, 'icon-social-dropbox', '0');
+INSERT INTO `jsh_functions` VALUES ('22', '010101', 'Danh mục sản phẩm', '0101', '/pages/materials/materialcategory.html', '\0', '0230', '', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('23', '010102', 'Thông tin sản phẩm', '0101', '/pages/materials/material.html', '\0', '0240', '', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('24', '0102', 'Thông tin cơ bản', '0', '', '\0', '0750', '', '电脑版', null, 'icon-grid', '0');
+INSERT INTO `jsh_functions` VALUES ('25', '01020101', 'Thông tin nhà cung cấp', '0102', '/pages/manage/vendor.html', '\0', '0260', '', '电脑版', '1,2', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('26', '010202', 'Thông tin kho', '0102', '/pages/manage/depot.html', '\0', '0270', '', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('31', '010206', 'Quản lý bởi con người', '0102', '/pages/materials/person.html', '\0', '0284', '', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('32', '0502', 'Quản lý hàng mua', '0', '', '\0', '0330', '', '电脑版', '', 'icon-loop', '0');
 INSERT INTO `jsh_functions` VALUES ('33', '050201', 'Mua hàngKho', '0502', '/pages/materials/purchase_in_list.html', '\0', '0340', '', '电脑版', '3,4,5', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('38', '0603', 'Bán hàng管理', '0', '', '\0', '0390', '', '电脑版', '', 'icon-briefcase', '0');
+INSERT INTO `jsh_functions` VALUES ('38', '0603', 'Bán hàng quản lý', '0', '', '\0', '0390', '', '电脑版', '', 'icon-briefcase', '0');
 INSERT INTO `jsh_functions` VALUES ('40', '080107', 'Phân bổRa nước ngoài', '0801', '/pages/materials/allocation_out_list.html', '\0', '0807', '', '电脑版', '3,4,5', 'icon-notebook', '0');
 INSERT INTO `jsh_functions` VALUES ('41', '060303', 'Bán hàngRa nước ngoài', '0603', '/pages/materials/sale_out_list.html', '\0', '0394', '', '电脑版', '3,4,5', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('44', '0704', '财务管理', '0', '', '\0', '0450', '', '电脑版', '', 'icon-map', '0');
-INSERT INTO `jsh_functions` VALUES ('59', '030101', '库存状况', '0301', '/pages/reports/in_out_stock_report.html', '\0', '0600', '', '电脑版', null, 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('194', '010204', '收支项目', '0102', '/pages/manage/inOutItem.html', '\0', '0282', '', '电脑版', null, 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('195', '010205', '结算账户', '0102', '/pages/manage/account.html', '\0', '0283', '', '电脑版', null, 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('197', '070402', '收入单', '0704', '/pages/financial/item_in.html', '\0', '0465', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('198', '0301', '报表查询', '0', '', '\0', '0570', '', '电脑版', null, 'icon-pie-chart', '0');
+INSERT INTO `jsh_functions` VALUES ('44', '0704', 'Quản lý tài chính', '0', '', '\0', '0450', '', '电脑版', '', 'icon-map', '0');
+INSERT INTO `jsh_functions` VALUES ('59', '030101', 'Tình trạng chứng khoán', '0301', '/pages/reports/in_out_stock_report.html', '\0', '0600', '', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('194', '010204', 'Mục thu nhập và chi tiêu', '0102', '/pages/manage/inOutItem.html', '\0', '0282', '', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('195', '010205', 'Tài khoản thanh toán', '0102', '/pages/manage/account.html', '\0', '0283', '', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('197', '070402', 'Phiếu thu nhập', '0704', '/pages/financial/item_in.html', '\0', '0465', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('198', '0301', 'Báo cáo truy vấn', '0', '', '\0', '0570', '', '电脑版', null, 'icon-pie-chart', '0');
 INSERT INTO `jsh_functions` VALUES ('199', '050204', 'Mua hàngTrả về', '0502', '/pages/materials/purchase_back_list.html', '\0', '0345', '', '电脑版', '3,4,5', 'icon-notebook', '0');
 INSERT INTO `jsh_functions` VALUES ('200', '060305', 'Bán hàngTrả về', '0603', '/pages/materials/sale_back_list.html', '\0', '0396', '', '电脑版', '3,4,5', 'icon-notebook', '0');
 INSERT INTO `jsh_functions` VALUES ('201', '080103', 'KhácKho', '0801', '/pages/materials/other_in_list.html', '\0', '0803', '', '电脑版', '3,4,5', 'icon-notebook', '0');
 INSERT INTO `jsh_functions` VALUES ('202', '080105', 'KhácRa nước ngoài', '0801', '/pages/materials/other_out_list.html', '\0', '0805', '', '电脑版', '3,4,5', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('203', '070403', '支出单', '0704', '/pages/financial/item_out.html', '\0', '0470', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('204', '070404', '收款单', '0704', '/pages/financial/money_in.html', '\0', '0475', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('205', '070405', '付款单', '0704', '/pages/financial/money_out.html', '\0', '0480', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('206', '070406', '转账单', '0704', '/pages/financial/giro.html', '\0', '0490', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('207', '030102', '结算账户', '0301', '/pages/reports/account_report.html', '\0', '0610', '', '电脑版', null, 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('208', '030103', '进货统计', '0301', '/pages/reports/buy_in_report.html', '\0', '0620', '', '电脑版', null, 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('209', '030104', 'Bán hàng统计', '0301', '/pages/reports/sale_out_report.html', '\0', '0630', '', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('203', '070403', 'Chi phí trượt', '0704', '/pages/financial/item_out.html', '\0', '0470', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('204', '070404', 'Biên lai', '0704', '/pages/financial/money_in.html', '\0', '0475', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('205', '070405', 'Phiếu thanh toán', '0704', '/pages/financial/money_out.html', '\0', '0480', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('206', '070406', 'Phiếu chuyển', '0704', '/pages/financial/giro.html', '\0', '0490', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('207', '030102', 'Tài khoản thanh toán', '0301', '/pages/reports/account_report.html', '\0', '0610', '', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('208', '030103', 'Thống kê đến', '0301', '/pages/reports/buy_in_report.html', '\0', '0620', '', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('209', '030104', 'Thống kê hàng bán', '0301', '/pages/reports/sale_out_report.html', '\0', '0630', '', '电脑版', null, 'icon-notebook', '0');
 INSERT INTO `jsh_functions` VALUES ('210', '040102', 'Bán lẻRa nước ngoài', '0401', '/pages/materials/retail_out_list.html', '\0', '0405', '', '电脑版', '3,4,5', 'icon-notebook', '0');
 INSERT INTO `jsh_functions` VALUES ('211', '040104', 'Bán lẻTrả về', '0401', '/pages/materials/retail_back_list.html', '\0', '0407', '', '电脑版', '3,4,5', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('212', '070407', '收预付款', '0704', '/pages/financial/advance_in.html', '\0', '0495', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('217', '01020102', '客户信息', '0102', '/pages/manage/customer.html', '\0', '0262', '', '电脑版', '1,2', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('218', '01020103', '会员信息', '0102', '/pages/manage/member.html', '\0', '0263', '', '电脑版', '1,2', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('219', '000107', '资产管理', '0001', '/pages/asset/asset.html', '\0', '0170', '\0', '电脑版', null, 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('220', '010103', '计量单位', '0101', '/pages/manage/unit.html', '\0', '0245', '', '电脑版', null, 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('225', '0401', 'Bán lẻ管理', '0', '', '\0', '0101', '', '电脑版', '', 'icon-present', '0');
-INSERT INTO `jsh_functions` VALUES ('226', '030106', 'Kho明细', '0301', '/pages/reports/in_detail.html', '\0', '0640', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('227', '030107', 'Ra nước ngoài明细', '0301', '/pages/reports/out_detail.html', '\0', '0645', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('228', '030108', 'Kho汇总', '0301', '/pages/reports/in_material_count.html', '\0', '0650', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('229', '030109', 'Ra nước ngoài汇总', '0301', '/pages/reports/out_material_count.html', '\0', '0655', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('212', '070407', 'Thanh toán tạm ứng', '0704', '/pages/financial/advance_in.html', '\0', '0495', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('217', '01020102', 'Thông tin khách hàng', '0102', '/pages/manage/customer.html', '\0', '0262', '', '电脑版', '1,2', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('218', '01020103', 'Thông tin thành viên', '0102', '/pages/manage/member.html', '\0', '0263', '', '电脑版', '1,2', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('219', '000107', 'Quản lý tài sản', '0001', '/pages/asset/asset.html', '\0', '0170', '\0', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('220', '010103', 'Đơn vị đo', '0101', '/pages/manage/unit.html', '\0', '0245', '', '电脑版', null, 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('225', '0401', 'Bán lẻ quản lý', '0', '', '\0', '0101', '', '电脑版', '', 'icon-present', '0');
+INSERT INTO `jsh_functions` VALUES ('226', '030106', 'Chi tiết Kho', '0301', '/pages/reports/in_detail.html', '\0', '0640', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('227', '030107', 'Ra nước ngoài chi tiết', '0301', '/pages/reports/out_detail.html', '\0', '0645', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('228', '030108', 'Tóm tắt', '0301', '/pages/reports/in_material_count.html', '\0', '0650', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('229', '030109', 'Tăng nước', '0301', '/pages/reports/out_material_count.html', '\0', '0655', '', '电脑版', '', 'icon-notebook', '0');
 INSERT INTO `jsh_functions` VALUES ('232', '080109', 'Danh sách hội', '0801', '/pages/materials/assemble_list.html', '\0', '0809', '', '电脑版', '3,4,5', 'icon-notebook', '0');
 INSERT INTO `jsh_functions` VALUES ('233', '080111', 'Trình tự tháo gỡ', '0801', '/pages/materials/disassemble_list.html', '\0', '0811', '', '电脑版', '3,4,5', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('234', '000105', '系统配置', '0001', '/pages/manage/systemConfig.html', '\0', '0165', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('235', '030110', '客户对账', '0301', '/pages/reports/customer_account.html', '\0', '0660', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('236', '000106', '商品属性', '0001', '/pages/materials/materialProperty.html', '\0', '0168', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('237', '030111', '供应商对账', '0301', '/pages/reports/vendor_account.html', '\0', '0665', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('239', '0801', '仓库管理', '0', '', '\0', '0420', '', '电脑版', '', 'icon-layers', '0');
-INSERT INTO `jsh_functions` VALUES ('240', '010104', '序列号', '0101', '/pages/manage/serialNumber.html', '\0', '0246', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('234', '000105', 'Cấu hình hệ thống', '0001', '/pages/manage/systemConfig.html', '\0', '0165', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('235', '030110', 'Đối chiếu khách hàng', '0301', '/pages/reports/customer_account.html', '\0', '0660', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('236', '000106', 'Thuộc tính sản phẩm', '0001', '/pages/materials/materialProperty.html', '\0', '0168', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('237', '030111', 'Hòa giải nhà cung cấp', '0301', '/pages/reports/vendor_account.html', '\0', '0665', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('239', '0801', 'Quản lý kho', '0', '', '\0', '0420', '', '电脑版', '', 'icon-layers', '0');
+INSERT INTO `jsh_functions` VALUES ('240', '010104', 'Số sê-ri', '0101', '/pages/manage/serialNumber.html', '\0', '0246', '', '电脑版', '', 'icon-notebook', '0');
 INSERT INTO `jsh_functions` VALUES ('241', '050202', 'Mua hàngĐặt hàng', '0502', '/pages/materials/purchase_orders_list.html', '\0', '0335', '', '电脑版', '3', 'icon-notebook', '0');
 INSERT INTO `jsh_functions` VALUES ('242', '060301', 'Bán hàngĐặt hàng', '0603', '/pages/materials/sale_orders_list.html', '\0', '0392', '', '电脑版', '3', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('243', '000108', '机构管理', '0001', '/pages/manage/organization.html', '', '0139', '', '电脑版', '', 'icon-notebook', '0');
-INSERT INTO `jsh_functions` VALUES ('244', '030112', '库存预警', '0301', '/pages/reports/stock_warning_report.html', '\0', '0670', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('243', '000108', 'Quản lý tổ chức', '0001', '/pages/manage/organization.html', '', '0139', '', '电脑版', '', 'icon-notebook', '0');
+INSERT INTO `jsh_functions` VALUES ('244', '030112', 'Cảnh báo chứng khoán', '0301', '/pages/reports/stock_warning_report.html', '\0', '0670', '', '电脑版', '', 'icon-notebook', '0');
 
 -- ----------------------------
 -- Table structure for jsh_inoutitem
@@ -694,35 +694,35 @@ INSERT INTO `jsh_functions` VALUES ('244', '030112', '库存预警', '0301', '/p
 DROP TABLE IF EXISTS `jsh_inoutitem`;
 CREATE TABLE `jsh_inoutitem` (
   `Id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Khóa chính',
-  `Name` varchar(50) DEFAULT NULL COMMENT '名称',
-  `Type` varchar(20) DEFAULT NULL COMMENT '类型',
-  `Remark` varchar(100) DEFAULT NULL COMMENT '备注',
-  `tenant_id` bigint(20) DEFAULT NULL COMMENT '租户id',
-  `delete_Flag` varchar(1) DEFAULT '0' COMMENT '删除标记，0未删除，1删除',
+  `Name` varchar(50) DEFAULT NULL COMMENT 'Tên',
+  `Type` varchar(20) DEFAULT NULL COMMENT 'Loại',
+  `Remark` varchar(100) DEFAULT NULL COMMENT 'Ghi chú',
+  `tenant_id` bigint(20) DEFAULT NULL COMMENT 'Người thuê id',
+  `delete_Flag` varchar(1) DEFAULT '0' COMMENT 'Xóa dấu, 0 không xóa, 1 xóa',
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COMMENT='收支项目';
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COMMENT='Mục thu nhập và chi tiêu';
 
 -- ----------------------------
 -- Records of jsh_inoutitem
 -- ----------------------------
-INSERT INTO `jsh_inoutitem` VALUES ('1', '办公耗材', '支出', '办公耗材', null, '0');
-INSERT INTO `jsh_inoutitem` VALUES ('5', '房租收入', '收入', '房租收入', null, '0');
-INSERT INTO `jsh_inoutitem` VALUES ('7', '利息收入', '收入', '利息收入', null, '0');
-INSERT INTO `jsh_inoutitem` VALUES ('8', '水电费', '支出', '水电费水电费', null, '0');
-INSERT INTO `jsh_inoutitem` VALUES ('9', '快递费', '支出', '快递费', null, '0');
-INSERT INTO `jsh_inoutitem` VALUES ('10', '交通报销费', '支出', '交通报销费', null, '0');
-INSERT INTO `jsh_inoutitem` VALUES ('11', '差旅费', '支出', '差旅费', null, '0');
-INSERT INTO `jsh_inoutitem` VALUES ('12', '全车贴膜-普通', '收入', '', null, '0');
-INSERT INTO `jsh_inoutitem` VALUES ('13', '全车贴膜-高档', '收入', '', null, '0');
-INSERT INTO `jsh_inoutitem` VALUES ('14', '洗车', '收入', '', null, '0');
-INSERT INTO `jsh_inoutitem` VALUES ('15', '保养汽车', '收入', '', null, '0');
-INSERT INTO `jsh_inoutitem` VALUES ('16', '收入项目1', '收入', '', '1', '0');
-INSERT INTO `jsh_inoutitem` VALUES ('17', '支出项目1', '支出', '', '1', '0');
-INSERT INTO `jsh_inoutitem` VALUES ('18', '收入1', '收入', '', '117', '0');
-INSERT INTO `jsh_inoutitem` VALUES ('19', '支出1', '支出', '', '117', '0');
-INSERT INTO `jsh_inoutitem` VALUES ('20', '支出2', '支出', '', '117', '0');
-INSERT INTO `jsh_inoutitem` VALUES ('21', '支出1', '支出', '', '63', '0');
-INSERT INTO `jsh_inoutitem` VALUES ('22', '收入1', '收入', '', '63', '0');
+INSERT INTO `jsh_inoutitem` VALUES ('1', 'Vật tư văn phòng', 'Chi tiêu', 'Thu vụ', null, '0');
+INSERT INTO `jsh_inoutitem` VALUES ('5', 'Thu nhập cho thuê', 'Thu nhập', 'Cho thuê Thu vụ', null, '0');
+INSERT INTO `jsh_inoutitem` VALUES ('7', 'Thu nhập lãi', 'Thu nhập', 'Lãi thu', null, '0');
+INSERT INTO `jsh_inoutitem` VALUES ('8', 'Tiện ích', 'Chi tiêu', 'Hóa đơn tiện ích', null, '0');
+INSERT INTO `jsh_inoutitem` VALUES ('9', 'Phí chuyển phát nhanh', 'Chi tiêu', 'Phí chuyển phát nhanh', null, '0');
+INSERT INTO `jsh_inoutitem` VALUES ('10', 'Phí bồi hoàn vận chuyển', 'Chi tiêu', 'Phí bồi hoàn vận chuyển', null, '0');
+INSERT INTO `jsh_inoutitem` VALUES ('11', 'Chi phí đi lại', 'Chi tiêu', 'Chi phí đi lại', null, '0');
+INSERT INTO `jsh_inoutitem` VALUES ('12', 'Phim xe bình thường', 'Thu nhập', '', null, '0');
+INSERT INTO `jsh_inoutitem` VALUES ('13', 'Phim xe bình thường', 'Thu nhập', '', null, '0');
+INSERT INTO `jsh_inoutitem` VALUES ('14', 'Rửa xe', 'Thu nhập', '', null, '0');
+INSERT INTO `jsh_inoutitem` VALUES ('15', 'Bảo dưỡng xe', 'Thu nhập', '', null, '0');
+INSERT INTO `jsh_inoutitem` VALUES ('16', 'Dự án Thu vụ 1', 'Thu nhập', '', '1', '0');
+INSERT INTO `jsh_inoutitem` VALUES ('17', 'Dự án Chi Tiêu 1', 'Chi tiêu', '', '1', '0');
+INSERT INTO `jsh_inoutitem` VALUES ('18', 'Thu nhập1', 'Thu nhập', '', '117', '0');
+INSERT INTO `jsh_inoutitem` VALUES ('19', 'Chi tiêu1', 'Chi tiêu', '', '117', '0');
+INSERT INTO `jsh_inoutitem` VALUES ('20', 'Chi tiêu2', 'Chi tiêu', '', '117', '0');
+INSERT INTO `jsh_inoutitem` VALUES ('21', 'Chi tiêu1', 'Chi tiêu', '', '63', '0');
+INSERT INTO `jsh_inoutitem` VALUES ('22', 'Thu nhập1', 'Thu nhập', '', '63', '0');
 
 -- ----------------------------
 -- Table structure for jsh_log
@@ -730,204 +730,204 @@ INSERT INTO `jsh_inoutitem` VALUES ('22', '收入1', '收入', '', '63', '0');
 DROP TABLE IF EXISTS `jsh_log`;
 CREATE TABLE `jsh_log` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Khóa chính',
-  `userID` bigint(20) NOT NULL COMMENT '操作用户ID',
-  `operation` varchar(500) DEFAULT NULL COMMENT '操作模块名称',
-  `clientIP` varchar(50) DEFAULT NULL COMMENT '客户端IP',
-  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
-  `status` tinyint(4) DEFAULT NULL COMMENT '操作状态 0==成功，1==失败',
-  `contentdetails` varchar(1000) DEFAULT NULL COMMENT '操作详情',
-  `remark` varchar(500) DEFAULT NULL COMMENT '备注信息',
-  `tenant_id` bigint(20) DEFAULT NULL COMMENT '租户id',
+  `userID` bigint(20) NOT NULL COMMENT 'ID người dùng hoạt động',
+  `operation` varchar(500) DEFAULT NULL COMMENT 'Tên mô-đun hoạt động',
+  `clientIP` varchar(50) DEFAULT NULL COMMENT 'IP khách hàng',
+  `createtime` datetime DEFAULT NULL COMMENT 'Thời gian sáng tạo',
+  `status` tinyint(4) DEFAULT NULL COMMENT 'Trạng thái hoạt động 0 == thành công, 1 == thất bại',
+  `contentdetails` varchar(1000) DEFAULT NULL COMMENT 'Chi tiết vận hành',
+  `remark` varchar(500) DEFAULT NULL COMMENT 'Thông tin nhận xét',
+  `tenant_id` bigint(20) DEFAULT NULL COMMENT 'Người thuê id',
   PRIMARY KEY (`id`),
   KEY `FKF2696AA13E226853` (`userID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6420 DEFAULT CHARSET=utf8 COMMENT='操作日志';
+) ENGINE=InnoDB AUTO_INCREMENT=6420 DEFAULT CHARSET=utf8 COMMENT='Nhật ký vận hành';
 
 -- ----------------------------
 -- Records of jsh_log
 -- ----------------------------
-INSERT INTO `jsh_log` VALUES ('6230', '63', '商品', '127.0.0.1', '2019-04-30 22:47:10', '0', '修改,id:568商品', '修改,id:568商品', '63');
-INSERT INTO `jsh_log` VALUES ('6231', '63', '商品', '127.0.0.1', '2019-04-30 22:47:17', '0', '修改,id:569商品', '修改,id:569商品', '63');
-INSERT INTO `jsh_log` VALUES ('6232', '63', '商品', '127.0.0.1', '2019-04-30 22:47:30', '0', '修改,id:570商品', '修改,id:570商品', '63');
-INSERT INTO `jsh_log` VALUES ('6233', '63', '商家', '127.0.0.1', '2019-04-30 22:48:41', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6234', '63', '商家', '127.0.0.1', '2019-04-30 22:50:03', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6235', '63', '商家', '127.0.0.1', '2019-04-30 22:50:15', '0', '修改,id:60商家', '修改,id:60商家', '63');
-INSERT INTO `jsh_log` VALUES ('6236', '63', '商家', '127.0.0.1', '2019-04-30 22:50:17', '0', '修改,id:60商家', '修改,id:60商家', '63');
-INSERT INTO `jsh_log` VALUES ('6237', '63', '仓库', '127.0.0.1', '2019-04-30 23:04:32', '0', '修改,id:14仓库', '修改,id:14仓库', '63');
-INSERT INTO `jsh_log` VALUES ('6238', '63', '仓库', '127.0.0.1', '2019-04-30 23:04:32', '0', '修改,id:15仓库', '修改,id:15仓库', '63');
-INSERT INTO `jsh_log` VALUES ('6239', '63', '仓库', '127.0.0.1', '2019-04-30 23:04:36', '0', '修改,id:15仓库', '修改,id:15仓库', '63');
-INSERT INTO `jsh_log` VALUES ('6240', '63', '仓库', '127.0.0.1', '2019-04-30 23:04:36', '0', '修改,id:14仓库', '修改,id:14仓库', '63');
-INSERT INTO `jsh_log` VALUES ('6241', '63', '仓库', '127.0.0.1', '2019-04-30 23:09:07', '0', '修改,id:14仓库', '修改,id:14仓库', '63');
-INSERT INTO `jsh_log` VALUES ('6242', '63', '仓库', '127.0.0.1', '2019-04-30 23:09:07', '0', '修改,id:15仓库', '修改,id:15仓库', '63');
-INSERT INTO `jsh_log` VALUES ('6243', '63', '单据', '127.0.0.1', '2019-04-30 23:15:27', '0', '新增单据', '新增单据', '63');
-INSERT INTO `jsh_log` VALUES ('6244', '63', '单据明细', '127.0.0.1', '2019-04-30 23:15:27', '0', '新增单据明细', '新增单据明细', '63');
-INSERT INTO `jsh_log` VALUES ('6245', '63', '单据明细', '127.0.0.1', '2019-04-30 23:15:27', '0', '删除,id:单据明细', '删除,id:单据明细', '63');
-INSERT INTO `jsh_log` VALUES ('6246', '63', '单据', '127.0.0.1', '2019-05-03 11:50:21', '0', '修改,id:196单据', '修改,id:196单据', '63');
-INSERT INTO `jsh_log` VALUES ('6247', '63', '单据明细', '127.0.0.1', '2019-05-03 11:50:21', '0', '新增单据明细', '新增单据明细', '63');
-INSERT INTO `jsh_log` VALUES ('6248', '63', '单据明细', '127.0.0.1', '2019-05-03 11:50:21', '0', '删除,id:单据明细', '删除,id:单据明细', '63');
-INSERT INTO `jsh_log` VALUES ('6249', '63', '单据', '127.0.0.1', '2019-05-03 11:51:52', '0', '修改,id:196单据', '修改,id:196单据', '63');
-INSERT INTO `jsh_log` VALUES ('6250', '63', '单据明细', '127.0.0.1', '2019-05-03 11:51:52', '0', '新增单据明细', '新增单据明细', '63');
-INSERT INTO `jsh_log` VALUES ('6251', '63', '单据明细', '127.0.0.1', '2019-05-03 11:51:52', '0', '删除,id:单据明细', '删除,id:单据明细', '63');
-INSERT INTO `jsh_log` VALUES ('6252', '63', '单据', '127.0.0.1', '2019-05-03 11:57:49', '0', '修改,id:196单据', '修改,id:196单据', '63');
-INSERT INTO `jsh_log` VALUES ('6253', '63', '单据明细', '127.0.0.1', '2019-05-03 11:57:49', '0', '新增单据明细', '新增单据明细', '63');
-INSERT INTO `jsh_log` VALUES ('6254', '63', '单据明细', '127.0.0.1', '2019-05-03 11:57:49', '0', '删除,id:单据明细', '删除,id:单据明细', '63');
-INSERT INTO `jsh_log` VALUES ('6255', '63', '商家', '127.0.0.1', '2019-05-03 13:05:32', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6256', '63', '商家', '127.0.0.1', '2019-05-03 13:20:45', '0', '删除,id:61商家', '删除,id:61商家', '63');
-INSERT INTO `jsh_log` VALUES ('6257', '63', '商家', '127.0.0.1', '2019-05-03 13:25:50', '0', '修改,id:57商家', '修改,id:57商家', '63');
-INSERT INTO `jsh_log` VALUES ('6258', '63', '商家', '127.0.0.1', '2019-05-03 13:25:58', '0', '修改,id:57商家', '修改,id:57商家', '63');
-INSERT INTO `jsh_log` VALUES ('6259', '63', '商家', '127.0.0.1', '2019-05-03 13:27:23', '0', '修改,id:57商家', '修改,id:57商家', '63');
-INSERT INTO `jsh_log` VALUES ('6260', '63', '商家', '127.0.0.1', '2019-05-03 13:27:32', '0', '修改,id:57商家', '修改,id:57商家', '63');
-INSERT INTO `jsh_log` VALUES ('6261', '63', '商家', '127.0.0.1', '2019-05-03 13:28:45', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6262', '63', '商家', '127.0.0.1', '2019-05-03 13:43:28', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6263', '63', '商家', '127.0.0.1', '2019-05-03 13:43:31', '0', '删除,id:63商家', '删除,id:63商家', '63');
-INSERT INTO `jsh_log` VALUES ('6264', '63', '商家', '127.0.0.1', '2019-05-03 13:43:35', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6265', '63', '商家', '127.0.0.1', '2019-05-03 13:43:44', '0', '修改,id:64商家', '修改,id:64商家', '63');
-INSERT INTO `jsh_log` VALUES ('6266', '63', '商家', '127.0.0.1', '2019-05-03 13:45:52', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6267', '63', '商家', '127.0.0.1', '2019-05-03 13:46:17', '0', '修改,id:65商家', '修改,id:65商家', '63');
-INSERT INTO `jsh_log` VALUES ('6268', '63', '商家', '127.0.0.1', '2019-05-03 13:46:23', '0', '删除,id:62,64,65商家', '删除,id:62,64,65商家', '63');
-INSERT INTO `jsh_log` VALUES ('6269', '63', '商家', '127.0.0.1', '2019-05-03 13:46:28', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6270', '63', '商家', '127.0.0.1', '2019-05-03 13:46:34', '0', '删除,id:66商家', '删除,id:66商家', '63');
-INSERT INTO `jsh_log` VALUES ('6271', '63', '商家', '127.0.0.1', '2019-05-03 13:46:58', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6272', '63', '商家', '127.0.0.1', '2019-05-03 13:47:07', '0', '修改,id:67商家', '修改,id:67商家', '63');
-INSERT INTO `jsh_log` VALUES ('6273', '63', '商家', '127.0.0.1', '2019-05-03 13:47:17', '0', '修改,id:67商家', '修改,id:67商家', '63');
-INSERT INTO `jsh_log` VALUES ('6274', '63', '商家', '127.0.0.1', '2019-05-03 13:54:20', '0', '删除,id:67商家', '删除,id:67商家', '63');
-INSERT INTO `jsh_log` VALUES ('6275', '63', '商家', '127.0.0.1', '2019-05-03 13:54:32', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6276', '63', '商家', '127.0.0.1', '2019-05-03 13:55:00', '0', '修改,id:68商家', '修改,id:68商家', '63');
-INSERT INTO `jsh_log` VALUES ('6277', '63', '商家', '127.0.0.1', '2019-05-03 13:55:33', '0', '修改,id:68商家', '修改,id:68商家', '63');
-INSERT INTO `jsh_log` VALUES ('6278', '63', '商家', '127.0.0.1', '2019-05-03 13:56:22', '0', '修改,id:68商家', '修改,id:68商家', '63');
-INSERT INTO `jsh_log` VALUES ('6279', '63', '商家', '127.0.0.1', '2019-05-03 13:56:42', '0', '修改,id:68商家', '修改,id:68商家', '63');
-INSERT INTO `jsh_log` VALUES ('6280', '63', '商家', '127.0.0.1', '2019-05-03 13:57:06', '0', '修改,id:68商家', '修改,id:68商家', '63');
-INSERT INTO `jsh_log` VALUES ('6281', '63', '商家', '127.0.0.1', '2019-05-03 13:57:24', '0', '修改,id:68商家', '修改,id:68商家', '63');
-INSERT INTO `jsh_log` VALUES ('6282', '63', '商家', '127.0.0.1', '2019-05-03 13:57:42', '0', '修改,id:68商家', '修改,id:68商家', '63');
-INSERT INTO `jsh_log` VALUES ('6283', '63', '商家', '127.0.0.1', '2019-05-03 13:57:50', '0', '修改,id:68商家', '修改,id:68商家', '63');
-INSERT INTO `jsh_log` VALUES ('6284', '63', '商家', '127.0.0.1', '2019-05-03 13:58:33', '0', '修改,id:68商家', '修改,id:68商家', '63');
-INSERT INTO `jsh_log` VALUES ('6285', '63', '商家', '127.0.0.1', '2019-05-03 13:58:43', '0', '修改,id:68商家', '修改,id:68商家', '63');
-INSERT INTO `jsh_log` VALUES ('6286', '63', '计量单位', '127.0.0.1', '2019-05-03 14:00:00', '0', '新增计量单位', '新增计量单位', '63');
-INSERT INTO `jsh_log` VALUES ('6287', '63', '商品', '127.0.0.1', '2019-05-03 14:00:56', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6288', '63', '商品', '127.0.0.1', '2019-05-03 14:06:56', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6289', '63', '商品', '127.0.0.1', '2019-05-03 14:07:09', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6290', '63', '商品', '127.0.0.1', '2019-05-03 14:07:19', '0', '删除,id:572,573商品', '删除,id:572,573商品', '63');
-INSERT INTO `jsh_log` VALUES ('6291', '63', '商品', '127.0.0.1', '2019-05-03 14:14:43', '0', '删除,id:571商品', '删除,id:571商品', '63');
-INSERT INTO `jsh_log` VALUES ('6292', '63', '商品', '127.0.0.1', '2019-05-03 14:15:13', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6295', '63', '商品', '127.0.0.1', '2019-05-03 14:16:06', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6296', '63', '商品', '127.0.0.1', '2019-05-03 14:16:15', '0', '删除,id:574,575商品', '删除,id:574,575商品', '63');
-INSERT INTO `jsh_log` VALUES ('6297', '63', '商品', '127.0.0.1', '2019-05-03 14:17:08', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6298', '63', '商品', '127.0.0.1', '2019-05-03 14:17:12', '0', '删除,id:576商品', '删除,id:576商品', '63');
-INSERT INTO `jsh_log` VALUES ('6299', '63', '商品', '127.0.0.1', '2019-05-03 14:17:39', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6300', '63', '商品', '127.0.0.1', '2019-05-03 14:18:59', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6301', '63', '商品', '127.0.0.1', '2019-05-03 14:19:17', '0', '修改,id:578商品', '修改,id:578商品', '63');
-INSERT INTO `jsh_log` VALUES ('6302', '63', '商品', '127.0.0.1', '2019-05-03 14:19:27', '0', '修改,id:578商品', '修改,id:578商品', '63');
-INSERT INTO `jsh_log` VALUES ('6303', '63', '商品', '127.0.0.1', '2019-05-03 14:19:34', '0', '修改,id:578商品', '修改,id:578商品', '63');
-INSERT INTO `jsh_log` VALUES ('6304', '63', '单据', '127.0.0.1', '2019-05-03 14:20:56', '0', '新增单据', '新增单据', '63');
-INSERT INTO `jsh_log` VALUES ('6305', '63', '单据明细', '127.0.0.1', '2019-05-03 14:20:56', '0', '新增单据明细', '新增单据明细', '63');
-INSERT INTO `jsh_log` VALUES ('6306', '63', '单据明细', '127.0.0.1', '2019-05-03 14:20:56', '0', '删除,id:单据明细', '删除,id:单据明细', '63');
-INSERT INTO `jsh_log` VALUES ('6307', '63', '商品', '127.0.0.1', '2019-05-03 14:21:11', '0', '删除,id:578商品', '删除,id:578商品', '63');
-INSERT INTO `jsh_log` VALUES ('6312', '63', '商品', '127.0.0.1', '2019-05-03 14:35:11', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6314', '63', '商品', '127.0.0.1', '2019-05-03 14:36:06', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6315', '63', '商品', '127.0.0.1', '2019-05-03 14:36:18', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6316', '63', '商品', '127.0.0.1', '2019-05-03 14:40:05', '0', '修改,id:581商品', '修改,id:581商品', '63');
-INSERT INTO `jsh_log` VALUES ('6317', '63', '商品', '127.0.0.1', '2019-05-03 14:40:07', '0', '修改,id:581商品', '修改,id:581商品', '63');
-INSERT INTO `jsh_log` VALUES ('6318', '63', '商品', '127.0.0.1', '2019-05-03 14:40:10', '0', '删除,id:581商品', '删除,id:581商品', '63');
-INSERT INTO `jsh_log` VALUES ('6319', '63', '商品', '127.0.0.1', '2019-05-03 14:40:12', '0', '删除,id:580商品', '删除,id:580商品', '63');
-INSERT INTO `jsh_log` VALUES ('6320', '63', '商品', '127.0.0.1', '2019-05-03 14:40:24', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6321', '63', '商品', '127.0.0.1', '2019-05-03 14:40:46', '0', '修改,id:582商品', '修改,id:582商品', '63');
-INSERT INTO `jsh_log` VALUES ('6322', '63', '商品', '127.0.0.1', '2019-05-03 14:43:25', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6323', '63', '商品', '127.0.0.1', '2019-05-03 14:43:28', '0', '删除,id:583商品', '删除,id:583商品', '63');
-INSERT INTO `jsh_log` VALUES ('6324', '63', '商品', '127.0.0.1', '2019-05-03 14:45:57', '0', '删除,id:582商品', '删除,id:582商品', '63');
-INSERT INTO `jsh_log` VALUES ('6325', '63', '商品', '127.0.0.1', '2019-05-03 14:46:18', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6326', '63', '商品', '127.0.0.1', '2019-05-03 14:46:38', '0', '修改,id:584商品', '修改,id:584商品', '63');
-INSERT INTO `jsh_log` VALUES ('6327', '63', '商品', '127.0.0.1', '2019-05-03 14:46:43', '0', '修改,id:584商品', '修改,id:584商品', '63');
-INSERT INTO `jsh_log` VALUES ('6328', '63', '商品', '127.0.0.1', '2019-05-03 14:46:51', '0', '修改,id:584商品', '修改,id:584商品', '63');
-INSERT INTO `jsh_log` VALUES ('6329', '63', '商品', '127.0.0.1', '2019-05-03 14:47:13', '0', '修改,id:584商品', '修改,id:584商品', '63');
-INSERT INTO `jsh_log` VALUES ('6330', '63', '商品', '127.0.0.1', '2019-05-03 14:47:18', '0', '修改,id:584商品', '修改,id:584商品', '63');
-INSERT INTO `jsh_log` VALUES ('6331', '63', '商品', '127.0.0.1', '2019-05-03 14:47:21', '0', '修改,id:584商品', '修改,id:584商品', '63');
-INSERT INTO `jsh_log` VALUES ('6332', '63', '商品', '127.0.0.1', '2019-05-03 14:47:29', '0', '修改,id:584商品', '修改,id:584商品', '63');
-INSERT INTO `jsh_log` VALUES ('6333', '63', '商品', '127.0.0.1', '2019-05-03 14:48:53', '0', '删除,id:584商品', '删除,id:584商品', '63');
-INSERT INTO `jsh_log` VALUES ('6334', '63', '商品', '127.0.0.1', '2019-05-03 14:49:11', '0', '新增商品', '新增商品', '63');
-INSERT INTO `jsh_log` VALUES ('6335', '63', '商家', '127.0.0.1', '2019-05-03 14:55:10', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6336', '63', '商家', '127.0.0.1', '2019-05-03 14:55:26', '0', '删除,id:69商家', '删除,id:69商家', '63');
-INSERT INTO `jsh_log` VALUES ('6337', '63', '商家', '127.0.0.1', '2019-05-03 14:56:46', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6338', '63', '商家', '127.0.0.1', '2019-05-03 14:57:13', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6339', '63', '商家', '127.0.0.1', '2019-05-03 14:58:47', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6340', '63', '商家', '127.0.0.1', '2019-05-03 14:58:52', '0', '新增商家', '新增商家', '63');
-INSERT INTO `jsh_log` VALUES ('6341', '63', '商家', '127.0.0.1', '2019-05-03 14:59:03', '0', '删除,id:70,72,73商家', '删除,id:70,72,73商家', '63');
-INSERT INTO `jsh_log` VALUES ('6342', '120', '关联关系', '127.0.0.1', '2019-05-03 16:37:15', '0', '修改,id:32关联关系', '修改,id:32关联关系', null);
-INSERT INTO `jsh_log` VALUES ('6343', '120', '功能', '127.0.0.1', '2019-05-03 16:55:52', '0', '新增功能', '新增功能', null);
-INSERT INTO `jsh_log` VALUES ('6344', '120', '关联关系', '127.0.0.1', '2019-05-03 16:56:20', '0', '修改,id:32关联关系', '修改,id:32关联关系', null);
-INSERT INTO `jsh_log` VALUES ('6345', '120', '关联关系', '127.0.0.1', '2019-05-03 16:57:24', '0', '修改,id:5关联关系', '修改,id:5关联关系', null);
-INSERT INTO `jsh_log` VALUES ('6346', '120', '功能', '127.0.0.1', '2019-05-03 16:58:04', '0', '修改,id:245功能', '修改,id:245功能', null);
-INSERT INTO `jsh_log` VALUES ('6347', '63', '角色', '127.0.0.1', '2019-05-03 17:06:47', '0', '新增角色', '新增角色', '63');
-INSERT INTO `jsh_log` VALUES ('6348', '63', '机构', '127.0.0.1', '2019-12-28 12:13:01', '0', '新增机构', null, '63');
-INSERT INTO `jsh_log` VALUES ('6349', '63', '用户', '127.0.0.1', '2019-12-28 12:13:15', '0', '新增用户', null, '63');
-INSERT INTO `jsh_log` VALUES ('6350', '63', '关联关系', '127.0.0.1', '2019-12-28 12:13:24', '0', '新增关联关系', null, '63');
-INSERT INTO `jsh_log` VALUES ('6351', '63', '系统配置', '127.0.0.1', '2019-12-28 12:13:39', '0', '新增系统配置', null, '63');
-INSERT INTO `jsh_log` VALUES ('6352', '63', '系统配置', '127.0.0.1', '2019-12-28 12:13:47', '0', '修改,id:9系统配置', null, '63');
-INSERT INTO `jsh_log` VALUES ('6353', '63', '商品', '127.0.0.1', '2019-12-28 12:14:23', '0', '新增商品', null, '63');
-INSERT INTO `jsh_log` VALUES ('6354', '63', '商品', '127.0.0.1', '2019-12-28 12:14:27', '0', '删除,id:585商品', null, '63');
-INSERT INTO `jsh_log` VALUES ('6355', '63', '序列号', '127.0.0.1', '2019-12-28 12:14:39', '0', '新增序列号', null, '63');
-INSERT INTO `jsh_log` VALUES ('6356', '63', '商家', '127.0.0.1', '2019-12-28 12:14:58', '0', '修改,id:59商家', null, '63');
-INSERT INTO `jsh_log` VALUES ('6357', '63', '商家', '127.0.0.1', '2019-12-28 12:15:04', '0', '修改,id:71商家', null, '63');
-INSERT INTO `jsh_log` VALUES ('6358', '63', '收支项目', '127.0.0.1', '2019-12-28 12:15:17', '0', '新增收支项目', null, '63');
-INSERT INTO `jsh_log` VALUES ('6359', '63', '收支项目', '127.0.0.1', '2019-12-28 12:15:23', '0', '新增收支项目', null, '63');
-INSERT INTO `jsh_log` VALUES ('6360', '63', '经手人', '127.0.0.1', '2019-12-28 12:15:35', '0', '新增经手人', null, '63');
-INSERT INTO `jsh_log` VALUES ('6361', '63', '经手人', '127.0.0.1', '2019-12-28 12:15:40', '0', '新增经手人', null, '63');
-INSERT INTO `jsh_log` VALUES ('6362', '63', '经手人', '127.0.0.1', '2019-12-28 12:15:48', '0', '新增经手人', null, '63');
-INSERT INTO `jsh_log` VALUES ('6363', '63', '财务', '127.0.0.1', '2019-12-28 12:16:23', '0', '新增财务', null, '63');
-INSERT INTO `jsh_log` VALUES ('6364', '63', '财务明细', '127.0.0.1', '2019-12-28 12:16:23', '0', '修改,id:,headerId:97财务明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6365', '63', '财务明细', '127.0.0.1', '2019-12-28 12:16:23', '0', '删除,id:财务明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6366', '63', '单据', '127.0.0.1', '2019-12-28 12:16:36', '0', '新增单据', null, '63');
-INSERT INTO `jsh_log` VALUES ('6367', '63', '单据明细', '127.0.0.1', '2019-12-28 12:16:36', '0', '新增单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6368', '63', '单据明细', '127.0.0.1', '2019-12-28 12:16:36', '0', '删除,id:单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6369', '63', '单据', '127.0.0.1', '2019-12-28 12:16:43', '0', '删除,id:198单据', null, '63');
-INSERT INTO `jsh_log` VALUES ('6370', '63', '单据', '127.0.0.1', '2019-12-28 12:16:43', '0', '删除,id:198单据', null, '63');
-INSERT INTO `jsh_log` VALUES ('6371', '63', '单据', '127.0.0.1', '2019-12-28 12:16:43', '0', '删除,id:198单据', null, '63');
-INSERT INTO `jsh_log` VALUES ('6372', '63', '单据', '127.0.0.1', '2019-12-28 12:16:55', '0', '新增单据', null, '63');
-INSERT INTO `jsh_log` VALUES ('6373', '63', '单据明细', '127.0.0.1', '2019-12-28 12:16:55', '0', '新增单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6374', '63', '单据明细', '127.0.0.1', '2019-12-28 12:16:55', '0', '删除,id:单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6375', '63', '单据', '127.0.0.1', '2019-12-28 12:17:09', '0', '新增单据', null, '63');
-INSERT INTO `jsh_log` VALUES ('6376', '63', '单据明细', '127.0.0.1', '2019-12-28 12:17:09', '0', '新增单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6377', '63', '单据明细', '127.0.0.1', '2019-12-28 12:17:09', '0', '删除,id:单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6378', '63', '单据', '127.0.0.1', '2019-12-28 12:17:22', '0', '新增单据', null, '63');
-INSERT INTO `jsh_log` VALUES ('6379', '63', '单据明细', '127.0.0.1', '2019-12-28 12:17:22', '0', '新增单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6380', '63', '单据明细', '127.0.0.1', '2019-12-28 12:17:22', '0', '删除,id:单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6381', '63', '单据', '127.0.0.1', '2019-12-28 12:17:40', '0', '新增单据', null, '63');
-INSERT INTO `jsh_log` VALUES ('6382', '63', '单据明细', '127.0.0.1', '2019-12-28 12:17:40', '0', '新增单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6383', '63', '单据明细', '127.0.0.1', '2019-12-28 12:17:40', '0', '删除,id:单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6384', '63', '单据', '127.0.0.1', '2019-12-28 12:17:48', '0', '新增单据', null, '63');
-INSERT INTO `jsh_log` VALUES ('6385', '63', '单据明细', '127.0.0.1', '2019-12-28 12:17:48', '0', '新增单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6386', '63', '单据明细', '127.0.0.1', '2019-12-28 12:17:48', '0', '删除,id:单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6387', '63', '单据', '127.0.0.1', '2019-12-28 12:17:58', '0', '新增单据', null, '63');
-INSERT INTO `jsh_log` VALUES ('6388', '63', '单据明细', '127.0.0.1', '2019-12-28 12:17:58', '0', '新增单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6389', '63', '单据明细', '127.0.0.1', '2019-12-28 12:17:58', '0', '删除,id:单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6390', '63', '单据', '127.0.0.1', '2019-12-28 12:18:09', '0', '新增单据', null, '63');
-INSERT INTO `jsh_log` VALUES ('6391', '63', '单据明细', '127.0.0.1', '2019-12-28 12:18:09', '0', '新增单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6392', '63', '单据明细', '127.0.0.1', '2019-12-28 12:18:09', '0', '删除,id:单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6393', '63', '商品', '127.0.0.1', '2019-12-28 12:18:27', '0', '修改,id:570商品', null, '63');
-INSERT INTO `jsh_log` VALUES ('6394', '63', '单据', '127.0.0.1', '2019-12-28 12:18:47', '0', '新增单据', null, '63');
-INSERT INTO `jsh_log` VALUES ('6395', '63', '单据明细', '127.0.0.1', '2019-12-28 12:18:47', '0', '新增单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6396', '63', '单据明细', '127.0.0.1', '2019-12-28 12:18:47', '0', '删除,id:单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6397', '63', '财务', '127.0.0.1', '2019-12-28 12:19:05', '0', '新增财务', null, '63');
-INSERT INTO `jsh_log` VALUES ('6398', '63', '财务明细', '127.0.0.1', '2019-12-28 12:19:05', '0', '修改,id:,headerId:98财务明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6399', '63', '财务明细', '127.0.0.1', '2019-12-28 12:19:05', '0', '删除,id:财务明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6400', '63', '财务', '127.0.0.1', '2019-12-28 12:19:19', '0', '新增财务', null, '63');
-INSERT INTO `jsh_log` VALUES ('6401', '63', '财务明细', '127.0.0.1', '2019-12-28 12:19:19', '0', '修改,id:,headerId:99财务明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6402', '63', '财务明细', '127.0.0.1', '2019-12-28 12:19:19', '0', '删除,id:财务明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6403', '63', '财务', '127.0.0.1', '2019-12-28 12:19:30', '0', '新增财务', null, '63');
-INSERT INTO `jsh_log` VALUES ('6404', '63', '财务明细', '127.0.0.1', '2019-12-28 12:19:30', '0', '修改,id:,headerId:100财务明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6405', '63', '财务明细', '127.0.0.1', '2019-12-28 12:19:30', '0', '删除,id:财务明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6406', '63', '财务', '127.0.0.1', '2019-12-28 12:19:42', '0', '新增财务', null, '63');
-INSERT INTO `jsh_log` VALUES ('6407', '63', '财务明细', '127.0.0.1', '2019-12-28 12:19:42', '0', '修改,id:,headerId:101财务明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6408', '63', '财务明细', '127.0.0.1', '2019-12-28 12:19:42', '0', '删除,id:财务明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6409', '63', '商家', '127.0.0.1', '2019-12-28 12:19:54', '0', '修改,id:60商家', null, '63');
-INSERT INTO `jsh_log` VALUES ('6410', '63', '财务', '127.0.0.1', '2019-12-28 12:19:54', '0', '新增财务', null, '63');
-INSERT INTO `jsh_log` VALUES ('6411', '63', '财务明细', '127.0.0.1', '2019-12-28 12:19:54', '0', '修改,id:,headerId:102财务明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6412', '63', '财务明细', '127.0.0.1', '2019-12-28 12:19:54', '0', '删除,id:财务明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6413', '63', '单据', '127.0.0.1', '2019-12-28 12:20:26', '0', '新增单据', null, '63');
-INSERT INTO `jsh_log` VALUES ('6414', '63', '商家', '127.0.0.1', '2019-12-28 12:20:26', '0', '修改,id:60商家', null, '63');
-INSERT INTO `jsh_log` VALUES ('6415', '63', '单据明细', '127.0.0.1', '2019-12-28 12:20:26', '0', '新增单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6416', '63', '单据明细', '127.0.0.1', '2019-12-28 12:20:26', '0', '删除,id:单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6417', '63', '单据', '127.0.0.1', '2019-12-28 12:20:39', '0', '新增单据', null, '63');
-INSERT INTO `jsh_log` VALUES ('6418', '63', '单据明细', '127.0.0.1', '2019-12-28 12:20:39', '0', '新增单据明细', null, '63');
-INSERT INTO `jsh_log` VALUES ('6419', '63', '单据明细', '127.0.0.1', '2019-12-28 12:20:39', '0', '删除,id:单据明细', null, '63');
+INSERT INTO `jsh_log` VALUES ('6230', '63', 'Hàng hóa', '127.0.0.1', '2019-04-30 22:47:10', '0', '修改,id:568Hàng hóa', '修改,id:568Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6231', '63', 'Hàng hóa', '127.0.0.1', '2019-04-30 22:47:17', '0', '修改,id:569Hàng hóa', '修改,id:569Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6232', '63', 'Hàng hóa', '127.0.0.1', '2019-04-30 22:47:30', '0', '修改,id:570Hàng hóa', '修改,id:570Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6233', '63', 'Kinh doanh', '127.0.0.1', '2019-04-30 22:48:41', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6234', '63', 'Kinh doanh', '127.0.0.1', '2019-04-30 22:50:03', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6235', '63', 'Kinh doanh', '127.0.0.1', '2019-04-30 22:50:15', '0', '修改,id:60Kinh doanh', '修改,id:60Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6236', '63', 'Kinh doanh', '127.0.0.1', '2019-04-30 22:50:17', '0', '修改,id:60Kinh doanh', '修改,id:60Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6237', '63', 'Kho', '127.0.0.1', '2019-04-30 23:04:32', '0', '修改,id:14Kho', '修改,id:14Kho', '63');
+INSERT INTO `jsh_log` VALUES ('6238', '63', 'Kho', '127.0.0.1', '2019-04-30 23:04:32', '0', '修改,id:15Kho', '修改,id:15Kho', '63');
+INSERT INTO `jsh_log` VALUES ('6239', '63', 'Kho', '127.0.0.1', '2019-04-30 23:04:36', '0', '修改,id:15Kho', '修改,id:15Kho', '63');
+INSERT INTO `jsh_log` VALUES ('6240', '63', 'Kho', '127.0.0.1', '2019-04-30 23:04:36', '0', '修改,id:14Kho', '修改,id:14Kho', '63');
+INSERT INTO `jsh_log` VALUES ('6241', '63', 'Kho', '127.0.0.1', '2019-04-30 23:09:07', '0', '修改,id:14Kho', '修改,id:14Kho', '63');
+INSERT INTO `jsh_log` VALUES ('6242', '63', 'Kho', '127.0.0.1', '2019-04-30 23:09:07', '0', '修改,id:15Kho', '修改,id:15Kho', '63');
+INSERT INTO `jsh_log` VALUES ('6243', '63', 'Tài liệu', '127.0.0.1', '2019-04-30 23:15:27', '0', '新增Tài liệu', '新增Tài liệu', '63');
+INSERT INTO `jsh_log` VALUES ('6244', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-04-30 23:15:27', '0', '新增Tài liệu chi tiết', '新增Tài liệu chi tiết', '63');
+INSERT INTO `jsh_log` VALUES ('6245', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-04-30 23:15:27', '0', '删除,id:Tài liệu chi tiết', '删除,id:Tài liệu chi tiết', '63');
+INSERT INTO `jsh_log` VALUES ('6246', '63', 'Tài liệu', '127.0.0.1', '2019-05-03 11:50:21', '0', '修改,id:196Tài liệu', '修改,id:196Tài liệu', '63');
+INSERT INTO `jsh_log` VALUES ('6247', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-05-03 11:50:21', '0', '新增Tài liệu chi tiết', '新增Tài liệu chi tiết', '63');
+INSERT INTO `jsh_log` VALUES ('6248', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-05-03 11:50:21', '0', '删除,id:Tài liệu chi tiết', '删除,id:Tài liệu chi tiết', '63');
+INSERT INTO `jsh_log` VALUES ('6249', '63', 'Tài liệu', '127.0.0.1', '2019-05-03 11:51:52', '0', '修改,id:196Tài liệu', '修改,id:196Tài liệu', '63');
+INSERT INTO `jsh_log` VALUES ('6250', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-05-03 11:51:52', '0', '新增Tài liệu chi tiết', '新增Tài liệu chi tiết', '63');
+INSERT INTO `jsh_log` VALUES ('6251', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-05-03 11:51:52', '0', '删除,id:Tài liệu chi tiết', '删除,id:Tài liệu chi tiết', '63');
+INSERT INTO `jsh_log` VALUES ('6252', '63', 'Tài liệu', '127.0.0.1', '2019-05-03 11:57:49', '0', '修改,id:196Tài liệu', '修改,id:196Tài liệu', '63');
+INSERT INTO `jsh_log` VALUES ('6253', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-05-03 11:57:49', '0', '新增Tài liệu chi tiết', '新增Tài liệu chi tiết', '63');
+INSERT INTO `jsh_log` VALUES ('6254', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-05-03 11:57:49', '0', '删除,id:Tài liệu chi tiết', '删除,id:Tài liệu chi tiết', '63');
+INSERT INTO `jsh_log` VALUES ('6255', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:05:32', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6256', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:20:45', '0', '删除,id:61Kinh doanh', '删除,id:61Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6257', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:25:50', '0', '修改,id:57Kinh doanh', '修改,id:57Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6258', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:25:58', '0', '修改,id:57Kinh doanh', '修改,id:57Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6259', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:27:23', '0', '修改,id:57Kinh doanh', '修改,id:57Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6260', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:27:32', '0', '修改,id:57Kinh doanh', '修改,id:57Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6261', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:28:45', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6262', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:43:28', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6263', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:43:31', '0', '删除,id:63Kinh doanh', '删除,id:63Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6264', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:43:35', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6265', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:43:44', '0', '修改,id:64Kinh doanh', '修改,id:64Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6266', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:45:52', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6267', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:46:17', '0', '修改,id:65Kinh doanh', '修改,id:65Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6268', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:46:23', '0', '删除,id:62,64,65Kinh doanh', '删除,id:62,64,65Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6269', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:46:28', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6270', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:46:34', '0', '删除,id:66Kinh doanh', '删除,id:66Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6271', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:46:58', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6272', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:47:07', '0', '修改,id:67Kinh doanh', '修改,id:67Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6273', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:47:17', '0', '修改,id:67Kinh doanh', '修改,id:67Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6274', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:54:20', '0', '删除,id:67Kinh doanh', '删除,id:67Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6275', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:54:32', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6276', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:55:00', '0', '修改,id:68Kinh doanh', '修改,id:68Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6277', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:55:33', '0', '修改,id:68Kinh doanh', '修改,id:68Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6278', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:56:22', '0', '修改,id:68Kinh doanh', '修改,id:68Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6279', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:56:42', '0', '修改,id:68Kinh doanh', '修改,id:68Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6280', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:57:06', '0', '修改,id:68Kinh doanh', '修改,id:68Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6281', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:57:24', '0', '修改,id:68Kinh doanh', '修改,id:68Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6282', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:57:42', '0', '修改,id:68Kinh doanh', '修改,id:68Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6283', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:57:50', '0', '修改,id:68Kinh doanh', '修改,id:68Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6284', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:58:33', '0', '修改,id:68Kinh doanh', '修改,id:68Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6285', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 13:58:43', '0', '修改,id:68Kinh doanh', '修改,id:68Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6286', '63', 'Đơn vị đo', '127.0.0.1', '2019-05-03 14:00:00', '0', '新增Đơn vị đo', '新增Đơn vị đo', '63');
+INSERT INTO `jsh_log` VALUES ('6287', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:00:56', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6288', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:06:56', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6289', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:07:09', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6290', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:07:19', '0', '删除,id:572,573Hàng hóa', '删除,id:572,573Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6291', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:14:43', '0', '删除,id:571Hàng hóa', '删除,id:571Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6292', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:15:13', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6295', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:16:06', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6296', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:16:15', '0', '删除,id:574,575Hàng hóa', '删除,id:574,575Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6297', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:17:08', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6298', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:17:12', '0', '删除,id:576Hàng hóa', '删除,id:576Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6299', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:17:39', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6300', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:18:59', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6301', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:19:17', '0', '修改,id:578Hàng hóa', '修改,id:578Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6302', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:19:27', '0', '修改,id:578Hàng hóa', '修改,id:578Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6303', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:19:34', '0', '修改,id:578Hàng hóa', '修改,id:578Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6304', '63', 'Tài liệu', '127.0.0.1', '2019-05-03 14:20:56', '0', '新增Tài liệu', '新增Tài liệu', '63');
+INSERT INTO `jsh_log` VALUES ('6305', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-05-03 14:20:56', '0', '新增Tài liệu chi tiết', '新增Tài liệu chi tiết', '63');
+INSERT INTO `jsh_log` VALUES ('6306', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-05-03 14:20:56', '0', '删除,id:Tài liệu chi tiết', '删除,id:Tài liệu chi tiết', '63');
+INSERT INTO `jsh_log` VALUES ('6307', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:21:11', '0', '删除,id:578Hàng hóa', '删除,id:578Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6312', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:35:11', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6314', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:36:06', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6315', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:36:18', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6316', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:40:05', '0', '修改,id:581Hàng hóa', '修改,id:581Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6317', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:40:07', '0', '修改,id:581Hàng hóa', '修改,id:581Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6318', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:40:10', '0', '删除,id:581Hàng hóa', '删除,id:581Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6319', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:40:12', '0', '删除,id:580Hàng hóa', '删除,id:580Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6320', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:40:24', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6321', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:40:46', '0', '修改,id:582Hàng hóa', '修改,id:582Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6322', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:43:25', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6323', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:43:28', '0', '删除,id:583Hàng hóa', '删除,id:583Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6324', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:45:57', '0', '删除,id:582Hàng hóa', '删除,id:582Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6325', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:46:18', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6326', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:46:38', '0', '修改,id:584Hàng hóa', '修改,id:584Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6327', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:46:43', '0', '修改,id:584Hàng hóa', '修改,id:584Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6328', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:46:51', '0', '修改,id:584Hàng hóa', '修改,id:584Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6329', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:47:13', '0', '修改,id:584Hàng hóa', '修改,id:584Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6330', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:47:18', '0', '修改,id:584Hàng hóa', '修改,id:584Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6331', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:47:21', '0', '修改,id:584Hàng hóa', '修改,id:584Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6332', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:47:29', '0', '修改,id:584Hàng hóa', '修改,id:584Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6333', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:48:53', '0', '删除,id:584Hàng hóa', '删除,id:584Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6334', '63', 'Hàng hóa', '127.0.0.1', '2019-05-03 14:49:11', '0', '新增Hàng hóa', '新增Hàng hóa', '63');
+INSERT INTO `jsh_log` VALUES ('6335', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 14:55:10', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6336', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 14:55:26', '0', '删除,id:69Kinh doanh', '删除,id:69Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6337', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 14:56:46', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6338', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 14:57:13', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6339', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 14:58:47', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6340', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 14:58:52', '0', '新增Kinh doanh', '新增Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6341', '63', 'Kinh doanh', '127.0.0.1', '2019-05-03 14:59:03', '0', '删除,id:70,72,73Kinh doanh', '删除,id:70,72,73Kinh doanh', '63');
+INSERT INTO `jsh_log` VALUES ('6342', '120', 'Hội', '127.0.0.1', '2019-05-03 16:37:15', '0', '修改,id:32Hội', '修改,id:32Hội', null);
+INSERT INTO `jsh_log` VALUES ('6343', '120', 'Chức năng', '127.0.0.1', '2019-05-03 16:55:52', '0', '新增Chức năng', '新增Chức năng', null);
+INSERT INTO `jsh_log` VALUES ('6344', '120', 'Hội', '127.0.0.1', '2019-05-03 16:56:20', '0', '修改,id:32Hội', '修改,id:32Hội', null);
+INSERT INTO `jsh_log` VALUES ('6345', '120', 'Hội', '127.0.0.1', '2019-05-03 16:57:24', '0', '修改,id:5Hội', '修改,id:5Hội', null);
+INSERT INTO `jsh_log` VALUES ('6346', '120', 'Chức năng', '127.0.0.1', '2019-05-03 16:58:04', '0', '修改,id:245Chức năng', '修改,id:245Chức năng', null);
+INSERT INTO `jsh_log` VALUES ('6347', '63', 'Vai trò', '127.0.0.1', '2019-05-03 17:06:47', '0', '新增Vai trò', '新增Vai trò', '63');
+INSERT INTO `jsh_log` VALUES ('6348', '63', 'Tổ chức giáo dục', '127.0.0.1', '2019-12-28 12:13:01', '0', '新增Tổ chức giáo dục', null, '63');
+INSERT INTO `jsh_log` VALUES ('6349', '63', 'Người dùng', '127.0.0.1', '2019-12-28 12:13:15', '0', '新增Người dùng', null, '63');
+INSERT INTO `jsh_log` VALUES ('6350', '63', 'Hội', '127.0.0.1', '2019-12-28 12:13:24', '0', '新增Hội', null, '63');
+INSERT INTO `jsh_log` VALUES ('6351', '63', 'Cấu hình hệ thống', '127.0.0.1', '2019-12-28 12:13:39', '0', '新增Cấu hình hệ thống', null, '63');
+INSERT INTO `jsh_log` VALUES ('6352', '63', 'Cấu hình hệ thống', '127.0.0.1', '2019-12-28 12:13:47', '0', '修改,id:9Cấu hình hệ thống', null, '63');
+INSERT INTO `jsh_log` VALUES ('6353', '63', 'Hàng hóa', '127.0.0.1', '2019-12-28 12:14:23', '0', '新增Hàng hóa', null, '63');
+INSERT INTO `jsh_log` VALUES ('6354', '63', 'Hàng hóa', '127.0.0.1', '2019-12-28 12:14:27', '0', '删除,id:585Hàng hóa', null, '63');
+INSERT INTO `jsh_log` VALUES ('6355', '63', 'Số sê-ri', '127.0.0.1', '2019-12-28 12:14:39', '0', '新增Số sê-ri', null, '63');
+INSERT INTO `jsh_log` VALUES ('6356', '63', 'Kinh doanh', '127.0.0.1', '2019-12-28 12:14:58', '0', '修改,id:59Kinh doanh', null, '63');
+INSERT INTO `jsh_log` VALUES ('6357', '63', 'Kinh doanh', '127.0.0.1', '2019-12-28 12:15:04', '0', '修改,id:71Kinh doanh', null, '63');
+INSERT INTO `jsh_log` VALUES ('6358', '63', 'Mục thu nhập và chi tiêu', '127.0.0.1', '2019-12-28 12:15:17', '0', '新增Mục thu nhập và chi tiêu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6359', '63', 'Mục thu nhập và chi tiêu', '127.0.0.1', '2019-12-28 12:15:23', '0', '新增Mục thu nhập và chi tiêu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6360', '63', 'Người đàn ông', '127.0.0.1', '2019-12-28 12:15:35', '0', '新增Người đàn ông', null, '63');
+INSERT INTO `jsh_log` VALUES ('6361', '63', 'Người đàn ông', '127.0.0.1', '2019-12-28 12:15:40', '0', '新增Người đàn ông', null, '63');
+INSERT INTO `jsh_log` VALUES ('6362', '63', 'Người đàn ông', '127.0.0.1', '2019-12-28 12:15:48', '0', '新增Người đàn ông', null, '63');
+INSERT INTO `jsh_log` VALUES ('6363', '63', 'Tài chính', '127.0.0.1', '2019-12-28 12:16:23', '0', '新增Tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6364', '63', 'Sự cố tài chính', '127.0.0.1', '2019-12-28 12:16:23', '0', '修改,id:,headerId:97Sự cố tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6365', '63', 'Sự cố tài chính', '127.0.0.1', '2019-12-28 12:16:23', '0', '删除,id:Sự cố tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6366', '63', 'Tài liệu', '127.0.0.1', '2019-12-28 12:16:36', '0', '新增Tài liệu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6367', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:16:36', '0', '新增Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6368', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:16:36', '0', '删除,id:Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6369', '63', 'Tài liệu', '127.0.0.1', '2019-12-28 12:16:43', '0', '删除,id:198Tài liệu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6370', '63', 'Tài liệu', '127.0.0.1', '2019-12-28 12:16:43', '0', '删除,id:198Tài liệu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6371', '63', 'Tài liệu', '127.0.0.1', '2019-12-28 12:16:43', '0', '删除,id:198Tài liệu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6372', '63', 'Tài liệu', '127.0.0.1', '2019-12-28 12:16:55', '0', '新增Tài liệu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6373', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:16:55', '0', '新增Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6374', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:16:55', '0', '删除,id:Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6375', '63', 'Tài liệu', '127.0.0.1', '2019-12-28 12:17:09', '0', '新增Tài liệu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6376', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:17:09', '0', '新增Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6377', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:17:09', '0', '删除,id:Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6378', '63', 'Tài liệu', '127.0.0.1', '2019-12-28 12:17:22', '0', '新增Tài liệu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6379', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:17:22', '0', '新增Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6380', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:17:22', '0', '删除,id:Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6381', '63', 'Tài liệu', '127.0.0.1', '2019-12-28 12:17:40', '0', '新增Tài liệu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6382', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:17:40', '0', '新增Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6383', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:17:40', '0', '删除,id:Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6384', '63', 'Tài liệu', '127.0.0.1', '2019-12-28 12:17:48', '0', '新增Tài liệu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6385', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:17:48', '0', '新增Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6386', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:17:48', '0', '删除,id:Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6387', '63', 'Tài liệu', '127.0.0.1', '2019-12-28 12:17:58', '0', '新增Tài liệu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6388', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:17:58', '0', '新增Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6389', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:17:58', '0', '删除,id:Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6390', '63', 'Tài liệu', '127.0.0.1', '2019-12-28 12:18:09', '0', '新增Tài liệu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6391', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:18:09', '0', '新增Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6392', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:18:09', '0', '删除,id:Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6393', '63', 'Hàng hóa', '127.0.0.1', '2019-12-28 12:18:27', '0', '修改,id:570Hàng hóa', null, '63');
+INSERT INTO `jsh_log` VALUES ('6394', '63', 'Tài liệu', '127.0.0.1', '2019-12-28 12:18:47', '0', '新增Tài liệu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6395', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:18:47', '0', '新增Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6396', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:18:47', '0', '删除,id:Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6397', '63', 'Tài chính', '127.0.0.1', '2019-12-28 12:19:05', '0', '新增Tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6398', '63', 'Sự cố tài chính', '127.0.0.1', '2019-12-28 12:19:05', '0', '修改,id:,headerId:98Sự cố tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6399', '63', 'Sự cố tài chính', '127.0.0.1', '2019-12-28 12:19:05', '0', '删除,id:Sự cố tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6400', '63', 'Tài chính', '127.0.0.1', '2019-12-28 12:19:19', '0', '新增Tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6401', '63', 'Sự cố tài chính', '127.0.0.1', '2019-12-28 12:19:19', '0', '修改,id:,headerId:99Sự cố tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6402', '63', 'Sự cố tài chính', '127.0.0.1', '2019-12-28 12:19:19', '0', '删除,id:Sự cố tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6403', '63', 'Tài chính', '127.0.0.1', '2019-12-28 12:19:30', '0', '新增Tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6404', '63', 'Sự cố tài chính', '127.0.0.1', '2019-12-28 12:19:30', '0', '修改,id:,headerId:100Sự cố tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6405', '63', 'Sự cố tài chính', '127.0.0.1', '2019-12-28 12:19:30', '0', '删除,id:Sự cố tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6406', '63', 'Tài chính', '127.0.0.1', '2019-12-28 12:19:42', '0', '新增Tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6407', '63', 'Sự cố tài chính', '127.0.0.1', '2019-12-28 12:19:42', '0', '修改,id:,headerId:101Sự cố tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6408', '63', 'Sự cố tài chính', '127.0.0.1', '2019-12-28 12:19:42', '0', '删除,id:Sự cố tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6409', '63', 'Kinh doanh', '127.0.0.1', '2019-12-28 12:19:54', '0', '修改,id:60Kinh doanh', null, '63');
+INSERT INTO `jsh_log` VALUES ('6410', '63', 'Tài chính', '127.0.0.1', '2019-12-28 12:19:54', '0', '新增Tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6411', '63', 'Sự cố tài chính', '127.0.0.1', '2019-12-28 12:19:54', '0', '修改,id:,headerId:102Sự cố tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6412', '63', 'Sự cố tài chính', '127.0.0.1', '2019-12-28 12:19:54', '0', '删除,id:Sự cố tài chính', null, '63');
+INSERT INTO `jsh_log` VALUES ('6413', '63', 'Tài liệu', '127.0.0.1', '2019-12-28 12:20:26', '0', '新增Tài liệu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6414', '63', 'Kinh doanh', '127.0.0.1', '2019-12-28 12:20:26', '0', '修改,id:60Kinh doanh', null, '63');
+INSERT INTO `jsh_log` VALUES ('6415', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:20:26', '0', '新增Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6416', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:20:26', '0', '删除,id:Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6417', '63', 'Tài liệu', '127.0.0.1', '2019-12-28 12:20:39', '0', '新增Tài liệu', null, '63');
+INSERT INTO `jsh_log` VALUES ('6418', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:20:39', '0', '新增Tài liệu chi tiết', null, '63');
+INSERT INTO `jsh_log` VALUES ('6419', '63', 'Tài liệu chi tiết', '127.0.0.1', '2019-12-28 12:20:39', '0', '删除,id:Tài liệu chi tiết', null, '63');
 
 -- ----------------------------
 -- Table structure for jsh_material
@@ -949,7 +949,7 @@ CREATE TABLE `jsh_material` (
   `LowPrice` decimal(24,6) DEFAULT NULL COMMENT '最低售价',
   `PresetPriceOne` decimal(24,6) DEFAULT NULL COMMENT '预设售价一',
   `PresetPriceTwo` decimal(24,6) DEFAULT NULL COMMENT '预设售价二',
-  `UnitId` bigint(20) DEFAULT NULL COMMENT '计量单位Id',
+  `UnitId` bigint(20) DEFAULT NULL COMMENT 'Đơn vị đoId',
   `FirstOutUnit` varchar(50) DEFAULT NULL COMMENT '首选Ra nước ngoài单位',
   `FirstInUnit` varchar(50) DEFAULT NULL COMMENT '首选Kho单位',
   `PriceStrategy` varchar(500) DEFAULT NULL COMMENT '价格策略',
@@ -957,7 +957,7 @@ CREATE TABLE `jsh_material` (
   `OtherField1` varchar(50) DEFAULT NULL COMMENT '自定义1',
   `OtherField2` varchar(50) DEFAULT NULL COMMENT '自定义2',
   `OtherField3` varchar(50) DEFAULT NULL COMMENT '自定义3',
-  `enableSerialNumber` varchar(1) DEFAULT '0' COMMENT '是否开启序列号，0否，1是',
+  `enableSerialNumber` varchar(1) DEFAULT '0' COMMENT '是否开启Số sê-ri，0否，1是',
   `tenant_id` bigint(20) DEFAULT NULL COMMENT '租户id',
   `delete_Flag` varchar(1) DEFAULT '0' COMMENT '删除标记，0未删除，1删除',
   PRIMARY KEY (`Id`),
@@ -968,38 +968,38 @@ CREATE TABLE `jsh_material` (
 -- ----------------------------
 -- Records of jsh_material
 -- ----------------------------
-INSERT INTO `jsh_material` VALUES ('485', '2', '棉线', 'a1', null, '100.000000', 'A21-4321', '5g', '白色', 'Sân', '', '1.000000', '1.000000', '1.000000', '1.000000', null, '', '', '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', 'b2', 'c3', 'd4', '0', null, '0');
-INSERT INTO `jsh_material` VALUES ('487', '1', '网布', '制造商b', null, '100.000000', '12343', '10g', '', 'Sân', '', '1.000000', '1.000000', '1.000000', '1.000000', null, '', '', '[{\"basic\":{\"Unit\":\"kg\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}},{\"other\":{\"Unit\":\"Gói\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', null, null, null, '0', null, '0');
-INSERT INTO `jsh_material` VALUES ('498', '1', '蕾丝', '制造商c', null, null, 'B123a', '6g', '', 'Sân', '', '1.200000', '1.000000', '1.300000', '1.400000', null, '', '', '[{\"basic\":{\"Unit\":\"kg\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}},{\"other\":{\"Unit\":\"Gói\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', null, null, null, '0', null, '0');
-INSERT INTO `jsh_material` VALUES ('499', '1', '棉线', '制造商d', null, null, 'A21-1234', '7g', '', 'Sân', '', '2.200000', '2.000000', '2.400000', '2.600000', null, '', '', '[{\"basic\":{\"Unit\":\"kg\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}},{\"other\":{\"Unit\":\"Gói\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', null, null, null, '0', null, '0');
-INSERT INTO `jsh_material` VALUES ('500', '1', '纯棉线', '制造商e', null, null, 'AAA666', '11g', '', 'Sân', '', '1.100000', '1.000000', '1.200000', '1.300000', null, '', '', '[{\"basic\":{\"Unit\":\"kg\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}},{\"other\":{\"Unit\":\"Gói\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', null, null, null, '0', null, '0');
-INSERT INTO `jsh_material` VALUES ('517', '1', '奶酪', '制造商', null, null, 'AAAA', '12ml', '', '', '', null, null, null, null, '8', 'Chai', 'Hộp', '[{\"basic\":{\"Unit\":\"Chai\",\"RetailPrice\":\"1.5\",\"LowPrice\":\"2\",\"PresetPriceOne\":\"3\",\"PresetPriceTwo\":\"4\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"18\",\"LowPrice\":\"24\",\"PresetPriceOne\":\"36\",\"PresetPriceTwo\":\"48\"}}]', '', null, null, null, '0', null, '0');
-INSERT INTO `jsh_material` VALUES ('518', '1', '安慕希', '伊利', null, null, 'abcd', '350ml', '银白色', '', '', null, null, null, null, '2', 'kg', 'Gói', '[{\"basic\":{\"Unit\":\"kg\",\"RetailPrice\":\"2\",\"LowPrice\":\"1\",\"PresetPriceOne\":\"3\",\"PresetPriceTwo\":\"4\"}},{\"other\":{\"Unit\":\"Gói\",\"RetailPrice\":\"50\",\"LowPrice\":\"25\",\"PresetPriceOne\":\"75\",\"PresetPriceTwo\":\"100\"}}]', '', '', '', '', '0', null, '0');
-INSERT INTO `jsh_material` VALUES ('562', '1', '红苹果（蛇果）', '', null, null, '60#', '大铁筐', '', 'Mỗi', '', '12.000000', '10.000000', '8.000000', '11.000000', null, '', '', '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"enableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', null, '0');
-INSERT INTO `jsh_material` VALUES ('563', '8', '139电话卡', '', null, null, '139', '规格1', '绿色', 'Trương', '', '11.000000', '11.000000', '11.000000', '11.000000', null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"enableSerialNumber\":\"1\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '1', null, '0');
-INSERT INTO `jsh_material` VALUES ('564', '14', '商品1', '', null, null, 'sp1', '', '', 'Mỗi', '', '22.000000', '22.000000', '22.000000', '22.000000', null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"enableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '1', '0');
-INSERT INTO `jsh_material` VALUES ('565', '14', '商品2', '', null, null, 'sp2', '', '', 'Mỗi', '', '44.000000', '44.000000', '44.000000', '44.000000', null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"1\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '1', '1', '0');
-INSERT INTO `jsh_material` VALUES ('566', '15', '商品666', '', null, null, 'sp666', '', '', 'Mỗi', '', '5.000000', '4.000000', '3.000000', '2.000000', null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '117', '0');
-INSERT INTO `jsh_material` VALUES ('567', null, '商品1', '', null, null, 'dsp1', '', '', 'Mỗi', '', '11.000000', '11.000000', '11.000000', '11.000000', null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '115', '0');
-INSERT INTO `jsh_material` VALUES ('568', '17', '商品1', '', null, '100.000000', 'sp1', '', '', 'Mỗi', '', null, null, null, null, null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '0');
-INSERT INTO `jsh_material` VALUES ('569', '17', '商品2', '', null, '200.000000', 'sp2', '', '', 'Chỉ', '', '5.000000', '5.000000', '5.000000', '5.000000', null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '0');
-INSERT INTO `jsh_material` VALUES ('570', '17', '商品3', '', null, '300.000000', 'sp3', '', '', 'Mỗi', '', null, null, null, null, null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '0');
-INSERT INTO `jsh_material` VALUES ('571', null, '商品4', '', null, null, 'sp4', '', '', '', '', null, null, null, null, '15', 'Mỗi', 'Hộp', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"3\",\"LowPrice\":\"2\",\"PresetPriceOne\":\"2\",\"PresetPriceTwo\":\"2\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"36\",\"LowPrice\":\"24\",\"PresetPriceOne\":\"24\",\"PresetPriceTwo\":\"24\"}}]', '', '', '', '', '0', '63', '1');
+INSERT INTO `jsh_material` VALUES ('485', '2', 'Sợi bông', 'a1', null, '100.000000', 'A21-4321', '5g', '白色', 'Sân', '', '1.000000', '1.000000', '1.000000', '1.000000', null, '', '', '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', 'b2', 'c3', 'd4', '0', null, '0');
+INSERT INTO `jsh_material` VALUES ('487', '1', 'Lưới', '制造商b', null, '100.000000', '12343', '10g', '', 'Sân', '', '1.000000', '1.000000', '1.000000', '1.000000', null, '', '', '[{\"basic\":{\"Unit\":\"kg\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}},{\"other\":{\"Unit\":\"Gói\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', null, null, null, '0', null, '0');
+INSERT INTO `jsh_material` VALUES ('498', '1', 'Ren', '制造商c', null, null, 'B123a', '6g', '', 'Sân', '', '1.200000', '1.000000', '1.300000', '1.400000', null, '', '', '[{\"basic\":{\"Unit\":\"kg\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}},{\"other\":{\"Unit\":\"Gói\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', null, null, null, '0', null, '0');
+INSERT INTO `jsh_material` VALUES ('499', '1', 'Sợi bông', '制造商d', null, null, 'A21-1234', '7g', '', 'Sân', '', '2.200000', '2.000000', '2.400000', '2.600000', null, '', '', '[{\"basic\":{\"Unit\":\"kg\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}},{\"other\":{\"Unit\":\"Gói\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', null, null, null, '0', null, '0');
+INSERT INTO `jsh_material` VALUES ('500', '1', 'Sợi bông', '制造商e', null, null, 'AAA666', '11g', '', 'Sân', '', '1.100000', '1.000000', '1.200000', '1.300000', null, '', '', '[{\"basic\":{\"Unit\":\"kg\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}},{\"other\":{\"Unit\":\"Gói\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', null, null, null, '0', null, '0');
+INSERT INTO `jsh_material` VALUES ('517', '1', 'Phô mai', '制造商', null, null, 'AAAA', '12ml', '', '', '', null, null, null, null, '8', 'Chai', 'Hộp', '[{\"basic\":{\"Unit\":\"Chai\",\"RetailPrice\":\"1.5\",\"LowPrice\":\"2\",\"PresetPriceOne\":\"3\",\"PresetPriceTwo\":\"4\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"18\",\"LowPrice\":\"24\",\"PresetPriceOne\":\"36\",\"PresetPriceTwo\":\"48\"}}]', '', null, null, null, '0', null, '0');
+INSERT INTO `jsh_material` VALUES ('518', '1', 'Amish', '伊利', null, null, 'abcd', '350ml', '银白色', '', '', null, null, null, null, '2', 'kg', 'Gói', '[{\"basic\":{\"Unit\":\"kg\",\"RetailPrice\":\"2\",\"LowPrice\":\"1\",\"PresetPriceOne\":\"3\",\"PresetPriceTwo\":\"4\"}},{\"other\":{\"Unit\":\"Gói\",\"RetailPrice\":\"50\",\"LowPrice\":\"25\",\"PresetPriceOne\":\"75\",\"PresetPriceTwo\":\"100\"}}]', '', '', '', '', '0', null, '0');
+INSERT INTO `jsh_material` VALUES ('562', '1', 'Táo đỏ (quả rắn)', '', null, null, '60#', '大铁筐', '', 'Mỗi', '', '12.000000', '10.000000', '8.000000', '11.000000', null, '', '', '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"enableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', null, '0');
+INSERT INTO `jsh_material` VALUES ('563', '8', '139 thẻ điện thoại', '', null, null, '139', '规格1', '绿色', 'Trương', '', '11.000000', '11.000000', '11.000000', '11.000000', null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"enableSerialNumber\":\"1\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '1', null, '0');
+INSERT INTO `jsh_material` VALUES ('564', '14', 'Hàng hóa1', '', null, null, 'sp1', '', '', 'Mỗi', '', '22.000000', '22.000000', '22.000000', '22.000000', null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"enableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '1', '0');
+INSERT INTO `jsh_material` VALUES ('565', '14', 'Hàng hóa2', '', null, null, 'sp2', '', '', 'Mỗi', '', '44.000000', '44.000000', '44.000000', '44.000000', null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"1\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '1', '1', '0');
+INSERT INTO `jsh_material` VALUES ('566', '15', 'Hàng hóa666', '', null, null, 'sp666', '', '', 'Mỗi', '', '5.000000', '4.000000', '3.000000', '2.000000', null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '117', '0');
+INSERT INTO `jsh_material` VALUES ('567', null, 'Hàng hóa1', '', null, null, 'dsp1', '', '', 'Mỗi', '', '11.000000', '11.000000', '11.000000', '11.000000', null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '115', '0');
+INSERT INTO `jsh_material` VALUES ('568', '17', 'Hàng hóa1', '', null, '100.000000', 'sp1', '', '', 'Mỗi', '', null, null, null, null, null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '0');
+INSERT INTO `jsh_material` VALUES ('569', '17', 'Hàng hóa2', '', null, '200.000000', 'sp2', '', '', 'Chỉ', '', '5.000000', '5.000000', '5.000000', '5.000000', null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '0');
+INSERT INTO `jsh_material` VALUES ('570', '17', 'Hàng hóa3', '', null, '300.000000', 'sp3', '', '', 'Mỗi', '', null, null, null, null, null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '0');
+INSERT INTO `jsh_material` VALUES ('571', null, 'Hàng hóa4', '', null, null, 'sp4', '', '', '', '', null, null, null, null, '15', 'Mỗi', 'Hộp', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"3\",\"LowPrice\":\"2\",\"PresetPriceOne\":\"2\",\"PresetPriceTwo\":\"2\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"36\",\"LowPrice\":\"24\",\"PresetPriceOne\":\"24\",\"PresetPriceTwo\":\"24\"}}]', '', '', '', '', '0', '63', '1');
 INSERT INTO `jsh_material` VALUES ('572', null, '234234', '', null, null, '234234', '', '', '', '', null, null, null, null, null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
 INSERT INTO `jsh_material` VALUES ('573', null, '12312', '', null, null, '12', '', '', '', '', null, null, null, null, null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
-INSERT INTO `jsh_material` VALUES ('574', null, '商品5', '', null, null, '213qw', '', '', 'Mỗi', '', null, null, null, null, null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
-INSERT INTO `jsh_material` VALUES ('575', null, '商品6', '', null, null, 'sp6', '', '', '', '', null, null, null, null, '15', '', '', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
-INSERT INTO `jsh_material` VALUES ('576', null, '商品7', '', null, null, 'sp7', '', '', '', '', null, null, null, null, '15', '', '', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
-INSERT INTO `jsh_material` VALUES ('577', null, '商品8', '', null, null, 'sp8', '', '', '', '', null, null, null, null, '15', '', '', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '0');
-INSERT INTO `jsh_material` VALUES ('578', '17', '商品9', '', null, null, 'sp9', '', '', '', '', null, null, null, null, '15', '', '', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
-INSERT INTO `jsh_material` VALUES ('579', null, '商品17', '', null, null, 'sp17', '', '', '', '', null, null, null, null, '15', '', '', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '0');
+INSERT INTO `jsh_material` VALUES ('574', null, 'Hàng hóa5', '', null, null, '213qw', '', '', 'Mỗi', '', null, null, null, null, null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
+INSERT INTO `jsh_material` VALUES ('575', null, 'Hàng hóa6', '', null, null, 'sp6', '', '', '', '', null, null, null, null, '15', '', '', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
+INSERT INTO `jsh_material` VALUES ('576', null, 'Hàng hóa7', '', null, null, 'sp7', '', '', '', '', null, null, null, null, '15', '', '', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
+INSERT INTO `jsh_material` VALUES ('577', null, 'Hàng hóa8', '', null, null, 'sp8', '', '', '', '', null, null, null, null, '15', '', '', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '0');
+INSERT INTO `jsh_material` VALUES ('578', '17', 'Hàng hóa9', '', null, null, 'sp9', '', '', '', '', null, null, null, null, '15', '', '', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
+INSERT INTO `jsh_material` VALUES ('579', null, 'Hàng hóa17', '', null, null, 'sp17', '', '', '', '', null, null, null, null, '15', '', '', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '0');
 INSERT INTO `jsh_material` VALUES ('580', null, '15', '', null, null, '15', '', '', '', '', null, null, null, null, '15', '', '', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
 INSERT INTO `jsh_material` VALUES ('581', null, '16', '', null, null, '16', '', '', '', '', null, null, null, null, '15', '', '', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
-INSERT INTO `jsh_material` VALUES ('582', null, '商品20', '', null, null, 'sp2', '', '', 'Mỗi', '', null, null, null, null, null, '', '', '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
+INSERT INTO `jsh_material` VALUES ('582', null, 'Hàng hóa20', '', null, null, 'sp2', '', '', 'Mỗi', '', null, null, null, null, null, '', '', '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
 INSERT INTO `jsh_material` VALUES ('583', null, 'wer', '', null, null, 'rqwe', '', '', '', '', null, null, null, null, '15', '', '', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
 INSERT INTO `jsh_material` VALUES ('584', null, 'sfds', '', null, null, 'a2233', '12', '2', 'ge', '', '1.000000', '2.000000', '3.000000', '4.000000', null, '', '', '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
 INSERT INTO `jsh_material` VALUES ('585', null, 'asdf', '', null, null, 'adsfasdf', '', '', '', '', null, null, null, null, '15', '', '', '[{\"basic\":{\"Unit\":\"Mỗi\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"0\"}},{\"other\":{\"Unit\":\"Hộp\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '0', '63', '1');
-INSERT INTO `jsh_material` VALUES ('586', null, '序列号商品测试', '', null, null, 'xlh123', '', '', 'Mỗi', '', null, null, null, null, null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"1\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '1', '63', '0');
+INSERT INTO `jsh_material` VALUES ('586', null, 'Số sê-riHàng hóa测试', '', null, null, 'xlh123', '', '', 'Mỗi', '', null, null, null, null, null, null, null, '[{\"basic\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\",\"EnableSerialNumber\":\"1\"}},{\"other\":{\"Unit\":\"\",\"RetailPrice\":\"\",\"LowPrice\":\"\",\"PresetPriceOne\":\"\",\"PresetPriceTwo\":\"\"}}]', '', '', '', '', '1', '63', '0');
 
 -- ----------------------------
 -- Table structure for jsh_materialcategory
@@ -1075,7 +1075,7 @@ DROP TABLE IF EXISTS `jsh_material_stock`;
 CREATE TABLE `jsh_material_stock` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Khóa chính',
   `material_id` bigint(20) DEFAULT NULL COMMENT '产品id',
-  `depot_id` bigint(20) DEFAULT NULL COMMENT '仓库id',
+  `depot_id` bigint(20) DEFAULT NULL COMMENT 'Khoid',
   `number` decimal(24,6) DEFAULT NULL COMMENT '初始库存Số lượng',
   `tenant_id` bigint(20) DEFAULT NULL COMMENT '租户id',
   `delete_fag` varchar(1) DEFAULT '0' COMMENT '删除标记，0未删除，1删除',
@@ -1113,39 +1113,39 @@ INSERT INTO `jsh_msg` VALUES ('2', '标题1', '内容1', '2019-09-10 00:11:39', 
 DROP TABLE IF EXISTS `jsh_organization`;
 CREATE TABLE `jsh_organization` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Khóa chính',
-  `org_no` varchar(20) DEFAULT NULL COMMENT '机构编号',
-  `org_full_name` varchar(500) DEFAULT NULL COMMENT '机构全称',
-  `org_abr` varchar(20) DEFAULT NULL COMMENT '机构简称',
-  `org_tpcd` varchar(9) DEFAULT NULL COMMENT '机构类型',
-  `org_stcd` char(1) DEFAULT NULL COMMENT '机构状态,1未营业、2正常营业、3暂停营业、4终止营业、5已除名',
-  `org_parent_no` varchar(20) DEFAULT NULL COMMENT '机构父节点编号',
-  `sort` varchar(20) DEFAULT NULL COMMENT '机构显示顺序',
+  `org_no` varchar(20) DEFAULT NULL COMMENT 'Tổ chức giáo dục编号',
+  `org_full_name` varchar(500) DEFAULT NULL COMMENT 'Tổ chức giáo dục全称',
+  `org_abr` varchar(20) DEFAULT NULL COMMENT 'Tổ chức giáo dục简称',
+  `org_tpcd` varchar(9) DEFAULT NULL COMMENT 'Tổ chức giáo dục类型',
+  `org_stcd` char(1) DEFAULT NULL COMMENT 'Tổ chức giáo dục状态,1未营业、2正常营业、3暂停营业、4终止营业、5已除名',
+  `org_parent_no` varchar(20) DEFAULT NULL COMMENT 'Tổ chức giáo dục父节点编号',
+  `sort` varchar(20) DEFAULT NULL COMMENT 'Tổ chức giáo dục显示顺序',
   `remark` varchar(500) DEFAULT NULL COMMENT '备注',
   `create_time` datetime DEFAULT NULL COMMENT '创建时间',
   `creator` bigint(20) DEFAULT NULL COMMENT '创建人',
   `update_time` datetime DEFAULT NULL COMMENT '更新时间',
   `updater` bigint(20) DEFAULT NULL COMMENT '更新人',
-  `org_create_time` datetime DEFAULT NULL COMMENT '机构创建时间',
-  `org_stop_time` datetime DEFAULT NULL COMMENT '机构停运时间',
+  `org_create_time` datetime DEFAULT NULL COMMENT 'Tổ chức giáo dục创建时间',
+  `org_stop_time` datetime DEFAULT NULL COMMENT 'Tổ chức giáo dục停运时间',
   `tenant_id` bigint(20) DEFAULT NULL COMMENT '租户id',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COMMENT='机构表';
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COMMENT='Tổ chức giáo dục表';
 
 -- ----------------------------
 -- Records of jsh_organization
 -- ----------------------------
-INSERT INTO `jsh_organization` VALUES ('1', '01', '根机构', '根机构', null, '5', '-1', '1', '根机构，初始化存在', null, null, '2019-03-15 23:01:21', '63', null, null, null);
-INSERT INTO `jsh_organization` VALUES ('2', null, 'Bán hàng', 'Bán hàng', null, '5', '01', '1', '机构表初始化', null, null, '2019-03-15 23:01:21', '63', null, null, null);
-INSERT INTO `jsh_organization` VALUES ('3', null, 'sdf444', 'sdf444', null, '5', '01', '2', '机构表初始化', null, null, '2019-03-15 23:01:19', '63', null, null, null);
-INSERT INTO `jsh_organization` VALUES ('4', null, '1231', '1231', null, '5', '01', '3', '机构表初始化', null, null, '2019-03-15 23:01:19', '63', null, null, null);
-INSERT INTO `jsh_organization` VALUES ('5', null, '23', '23', null, '5', '01', '4', '机构表初始化', null, null, '2019-03-15 23:01:19', '63', null, null, null);
+INSERT INTO `jsh_organization` VALUES ('1', '01', '根Tổ chức giáo dục', '根Tổ chức giáo dục', null, '5', '-1', '1', '根Tổ chức giáo dục，初始化存在', null, null, '2019-03-15 23:01:21', '63', null, null, null);
+INSERT INTO `jsh_organization` VALUES ('2', null, 'Bán hàng', 'Bán hàng', null, '5', '01', '1', 'Tổ chức giáo dục表初始化', null, null, '2019-03-15 23:01:21', '63', null, null, null);
+INSERT INTO `jsh_organization` VALUES ('3', null, 'sdf444', 'sdf444', null, '5', '01', '2', 'Tổ chức giáo dục表初始化', null, null, '2019-03-15 23:01:19', '63', null, null, null);
+INSERT INTO `jsh_organization` VALUES ('4', null, '1231', '1231', null, '5', '01', '3', 'Tổ chức giáo dục表初始化', null, null, '2019-03-15 23:01:19', '63', null, null, null);
+INSERT INTO `jsh_organization` VALUES ('5', null, '23', '23', null, '5', '01', '4', 'Tổ chức giáo dục表初始化', null, null, '2019-03-15 23:01:19', '63', null, null, null);
 INSERT INTO `jsh_organization` VALUES ('6', '4444', 'abcd', 'abcd', null, '1', '-1', '', '', '2019-03-15 23:01:30', '63', '2019-03-15 23:01:47', '63', null, null, null);
 INSERT INTO `jsh_organization` VALUES ('7', '123', 'bbbb', 'bbbb', null, '1', 'abcd', '', '', '2019-03-15 23:01:42', '63', '2019-03-15 23:01:42', '63', null, null, null);
 INSERT INTO `jsh_organization` VALUES ('8', 'ddddd', 'ddddd', 'ddddd', null, '1', '4444', '', '', '2019-03-15 23:02:02', '63', '2019-03-15 23:02:02', '63', null, null, null);
 INSERT INTO `jsh_organization` VALUES ('9', '555', 'dddddddddd', 'dddddddddd', null, '1', 'ddddd', '', '', '2019-03-15 23:02:16', '63', '2019-03-15 23:02:16', '63', null, null, null);
 INSERT INTO `jsh_organization` VALUES ('10', '23124', 'gaga', 'gaga', null, '1', '-1', '11', '', '2019-03-31 21:52:31', '117', '2019-03-31 21:52:31', '117', null, null, '117');
 INSERT INTO `jsh_organization` VALUES ('11', '12312', 'fsadfasdf', 'fsadfasdf', null, '1', '23124', '12312', '', '2019-03-31 21:52:52', '117', '2019-03-31 21:52:52', '117', null, null, '117');
-INSERT INTO `jsh_organization` VALUES ('12', '001', '测试机构', '测试机构', null, '2', '-1', '001', '', '2019-12-28 12:13:01', '63', '2019-12-28 12:13:01', '63', null, null, '63');
+INSERT INTO `jsh_organization` VALUES ('12', '001', '测试Tổ chức giáo dục', '测试Tổ chức giáo dục', null, '2', '-1', '001', '', '2019-12-28 12:13:01', '63', '2019-12-28 12:13:01', '63', null, null, '63');
 
 -- ----------------------------
 -- Table structure for jsh_orga_user_rel
@@ -1153,9 +1153,9 @@ INSERT INTO `jsh_organization` VALUES ('12', '001', '测试机构', '测试机�
 DROP TABLE IF EXISTS `jsh_orga_user_rel`;
 CREATE TABLE `jsh_orga_user_rel` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Khóa chính',
-  `orga_id` bigint(20) NOT NULL COMMENT '机构id',
-  `user_id` bigint(20) NOT NULL COMMENT '用户id',
-  `user_blng_orga_dspl_seq` varchar(20) DEFAULT NULL COMMENT '用户在所属机构中显示顺序',
+  `orga_id` bigint(20) NOT NULL COMMENT 'Tổ chức giáo dụcid',
+  `user_id` bigint(20) NOT NULL COMMENT 'Người dùngid',
+  `user_blng_orga_dspl_seq` varchar(20) DEFAULT NULL COMMENT 'Người dùng在所属Tổ chức giáo dục中显示顺序',
   `delete_flag` char(1) DEFAULT '0' COMMENT '删除标记，0未删除，1删除',
   `create_time` datetime DEFAULT NULL COMMENT '创建时间',
   `creator` bigint(20) DEFAULT NULL COMMENT '创建人',
@@ -1163,7 +1163,7 @@ CREATE TABLE `jsh_orga_user_rel` (
   `updater` bigint(20) DEFAULT NULL COMMENT '更新人',
   `tenant_id` bigint(20) DEFAULT NULL COMMENT '租户id',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COMMENT='机构用户关系表';
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COMMENT='Tổ chức giáo dụcNgười dùng关系表';
 
 -- ----------------------------
 -- Records of jsh_orga_user_rel
@@ -1190,25 +1190,25 @@ CREATE TABLE `jsh_person` (
   `tenant_id` bigint(20) DEFAULT NULL COMMENT '租户id',
   `delete_Flag` varchar(1) DEFAULT '0' COMMENT '删除标记，0未删除，1删除',
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COMMENT='经手人表';
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COMMENT='Người đàn ông表';
 
 -- ----------------------------
 -- Records of jsh_person
 -- ----------------------------
-INSERT INTO `jsh_person` VALUES ('3', '财务员', '王五-财务', null, '0');
-INSERT INTO `jsh_person` VALUES ('4', '财务员', '赵六-财务', null, '0');
+INSERT INTO `jsh_person` VALUES ('3', 'Tài chính员', '王五-Tài chính', null, '0');
+INSERT INTO `jsh_person` VALUES ('4', 'Tài chính员', '赵六-Tài chính', null, '0');
 INSERT INTO `jsh_person` VALUES ('5', '业务员', '小李', null, '0');
 INSERT INTO `jsh_person` VALUES ('6', '业务员', '小军', null, '0');
 INSERT INTO `jsh_person` VALUES ('7', '业务员', '小曹', null, '0');
 INSERT INTO `jsh_person` VALUES ('8', '仓管员', '小季', '1', '0');
-INSERT INTO `jsh_person` VALUES ('9', '财务员', '小月', '1', '0');
+INSERT INTO `jsh_person` VALUES ('9', 'Tài chính员', '小月', '1', '0');
 INSERT INTO `jsh_person` VALUES ('10', '仓管员', '小Trương', '117', '0');
 INSERT INTO `jsh_person` VALUES ('11', '业务员', '晓丽', '117', '0');
-INSERT INTO `jsh_person` VALUES ('12', '财务员', '小草', '117', '0');
-INSERT INTO `jsh_person` VALUES ('13', '业务员', '经手人1', '115', '0');
+INSERT INTO `jsh_person` VALUES ('12', 'Tài chính员', '小草', '117', '0');
+INSERT INTO `jsh_person` VALUES ('13', '业务员', 'Người đàn ông1', '115', '0');
 INSERT INTO `jsh_person` VALUES ('14', '业务员', '小李', '63', '0');
 INSERT INTO `jsh_person` VALUES ('15', '仓管员', '小军', '63', '0');
-INSERT INTO `jsh_person` VALUES ('16', '财务员', '小夏', '63', '0');
+INSERT INTO `jsh_person` VALUES ('16', 'Tài chính员', '小夏', '63', '0');
 
 -- ----------------------------
 -- Table structure for jsh_role
@@ -1223,7 +1223,7 @@ CREATE TABLE `jsh_role` (
   `tenant_id` bigint(20) DEFAULT NULL COMMENT '租户id',
   `delete_Flag` varchar(1) DEFAULT '0' COMMENT '删除标记，0未删除，1删除',
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COMMENT='角色表';
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COMMENT='Vai trò表';
 
 -- ----------------------------
 -- Records of jsh_role
@@ -1231,11 +1231,11 @@ CREATE TABLE `jsh_role` (
 INSERT INTO `jsh_role` VALUES ('4', '管理员', null, null, null, null, '0');
 INSERT INTO `jsh_role` VALUES ('5', '仓管员', null, null, null, null, '0');
 INSERT INTO `jsh_role` VALUES ('10', '租户', null, null, null, null, '0');
-INSERT INTO `jsh_role` VALUES ('12', '角色123', null, null, null, '117', '0');
-INSERT INTO `jsh_role` VALUES ('13', '角色test', null, null, null, null, '0');
+INSERT INTO `jsh_role` VALUES ('12', 'Vai trò123', null, null, null, '117', '0');
+INSERT INTO `jsh_role` VALUES ('13', 'Vai tròtest', null, null, null, null, '0');
 INSERT INTO `jsh_role` VALUES ('14', '44444', null, null, null, null, '1');
-INSERT INTO `jsh_role` VALUES ('15', 'laoba角色', null, null, null, '115', '0');
-INSERT INTO `jsh_role` VALUES ('16', '测试角色123', null, null, null, '63', '0');
+INSERT INTO `jsh_role` VALUES ('15', 'laobaVai trò', null, null, null, '115', '0');
+INSERT INTO `jsh_role` VALUES ('16', '测试Vai trò123', null, null, null, '63', '0');
 
 -- ----------------------------
 -- Table structure for jsh_sequence
@@ -1249,12 +1249,12 @@ CREATE TABLE `jsh_sequence` (
   `increment_val` int(11) NOT NULL DEFAULT '1' COMMENT '增长步数',
   `remark` varchar(500) DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`seq_name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='单据编号表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Tài liệu编号表';
 
 -- ----------------------------
 -- Records of jsh_sequence
 -- ----------------------------
-INSERT INTO `jsh_sequence` VALUES ('depot_number_seq', '1', '999999999999999999', '315', '1', '单据编号sequence');
+INSERT INTO `jsh_sequence` VALUES ('depot_number_seq', '1', '999999999999999999', '315', '1', 'Tài liệu编号sequence');
 
 -- ----------------------------
 -- Table structure for jsh_serial_number
@@ -1263,7 +1263,7 @@ DROP TABLE IF EXISTS `jsh_serial_number`;
 CREATE TABLE `jsh_serial_number` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Khóa chính',
   `material_Id` bigint(20) DEFAULT NULL COMMENT '产品表id',
-  `serial_Number` varchar(64) DEFAULT NULL COMMENT '序列号',
+  `serial_Number` varchar(64) DEFAULT NULL COMMENT 'Số sê-ri',
   `is_Sell` varchar(1) DEFAULT '0' COMMENT '是否卖出，0未卖出，1卖出',
   `remark` varchar(1024) DEFAULT NULL COMMENT '备注',
   `delete_Flag` varchar(1) DEFAULT '0' COMMENT '删除标记，0未删除，1删除',
@@ -1271,10 +1271,10 @@ CREATE TABLE `jsh_serial_number` (
   `creator` bigint(20) DEFAULT NULL COMMENT '创建人',
   `update_Time` datetime DEFAULT NULL COMMENT '更新时间',
   `updater` bigint(20) DEFAULT NULL COMMENT '更新人',
-  `depothead_Id` bigint(20) DEFAULT NULL COMMENT '单据主表id，用于跟踪序列号流向',
+  `depothead_Id` bigint(20) DEFAULT NULL COMMENT 'Tài liệu主表id，用于跟踪Số sê-ri流向',
   `tenant_id` bigint(20) DEFAULT NULL COMMENT '租户id',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8 COMMENT='序列号表';
+) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8 COMMENT='Số sê-ri表';
 
 -- ----------------------------
 -- Records of jsh_serial_number
@@ -1469,7 +1469,7 @@ CREATE TABLE `jsh_systemconfig` (
   `company_tel` varchar(20) DEFAULT NULL COMMENT '公司电话',
   `company_fax` varchar(20) DEFAULT NULL COMMENT '公司传真',
   `company_post_code` varchar(20) DEFAULT NULL COMMENT '公司邮编',
-  `depot_flag` varchar(1) DEFAULT '0' COMMENT '仓库启用标记，0未启用，1启用',
+  `depot_flag` varchar(1) DEFAULT '0' COMMENT 'Kho启用标记，0未启用，1启用',
   `customer_flag` varchar(1) DEFAULT '0' COMMENT '客户启用标记，0未启用，1启用',
   `tenant_id` bigint(20) DEFAULT NULL COMMENT '租户id',
   `delete_Flag` varchar(1) DEFAULT '0' COMMENT '删除标记，0未删除，1删除',
@@ -1489,10 +1489,10 @@ INSERT INTO `jsh_systemconfig` VALUES ('9', '公司1', '小军', '', '', '', '',
 DROP TABLE IF EXISTS `jsh_tenant`;
 CREATE TABLE `jsh_tenant` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Khóa chính',
-  `tenant_id` bigint(20) DEFAULT NULL COMMENT '用户id',
+  `tenant_id` bigint(20) DEFAULT NULL COMMENT 'Người dùngid',
   `login_name` varchar(255) DEFAULT NULL COMMENT '登录名',
-  `user_num_limit` int(11) DEFAULT NULL COMMENT '用户Số lượng限制',
-  `bills_num_limit` int(11) DEFAULT NULL COMMENT '单据Số lượng限制',
+  `user_num_limit` int(11) DEFAULT NULL COMMENT 'Người dùngSố lượng限制',
+  `bills_num_limit` int(11) DEFAULT NULL COMMENT 'Tài liệuSố lượng限制',
   `create_time` datetime DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8 COMMENT='租户';
@@ -1539,8 +1539,8 @@ INSERT INTO `jsh_unit` VALUES ('15', 'Mỗi,Hộp(1:12)', '63', '0');
 DROP TABLE IF EXISTS `jsh_user`;
 CREATE TABLE `jsh_user` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'Khóa chính',
-  `username` varchar(255) NOT NULL COMMENT '用户姓名--例如Trương三',
-  `loginame` varchar(255) DEFAULT NULL COMMENT '登录用户名--可能为空',
+  `username` varchar(255) NOT NULL COMMENT 'Người dùng姓名--例如Trương三',
+  `loginame` varchar(255) DEFAULT NULL COMMENT '登录Người dùng名--可能为空',
   `password` varchar(50) DEFAULT NULL COMMENT '登陆密Sân',
   `position` varchar(200) DEFAULT NULL COMMENT '职位',
   `department` varchar(255) DEFAULT NULL COMMENT '所属部门',
@@ -1549,11 +1549,11 @@ CREATE TABLE `jsh_user` (
   `ismanager` tinyint(4) NOT NULL DEFAULT '1' COMMENT '是否为管理者 0==管理者 1==员工',
   `isystem` tinyint(4) NOT NULL DEFAULT '0' COMMENT '是否系统自带数据 ',
   `Status` tinyint(4) DEFAULT '0' COMMENT '状态，0：正常，1：删除，2封禁',
-  `description` varchar(500) DEFAULT NULL COMMENT '用户描述信息',
+  `description` varchar(500) DEFAULT NULL COMMENT 'Người dùng描述信息',
   `remark` varchar(500) DEFAULT NULL COMMENT '备注',
   `tenant_id` bigint(20) DEFAULT NULL COMMENT '租户id',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=132 DEFAULT CHARSET=utf8 COMMENT='用户表';
+) ENGINE=InnoDB AUTO_INCREMENT=132 DEFAULT CHARSET=utf8 COMMENT='Người dùng表';
 
 -- ----------------------------
 -- Records of jsh_user
@@ -1585,7 +1585,7 @@ INSERT INTO `jsh_user` VALUES ('126', '123123', '123123', 'e10adc3949ba59abbe56e
 INSERT INTO `jsh_user` VALUES ('127', '2345123', '2345123', 'e10adc3949ba59abbe56e057f20f883e', null, null, null, null, '1', '0', '0', null, null, '127');
 INSERT INTO `jsh_user` VALUES ('128', 'q12341243', 'q12341243', 'e10adc3949ba59abbe56e057f20f883e', null, null, null, null, '1', '0', '0', null, null, '128');
 INSERT INTO `jsh_user` VALUES ('130', 'jsh666', 'jsh666', 'e10adc3949ba59abbe56e057f20f883e', null, null, null, null, '1', '0', '0', null, null, '130');
-INSERT INTO `jsh_user` VALUES ('131', '测试用户', 'test123', 'e10adc3949ba59abbe56e057f20f883e', '', null, '', '', '1', '0', '0', '', null, '63');
+INSERT INTO `jsh_user` VALUES ('131', '测试Người dùng', 'test123', 'e10adc3949ba59abbe56e057f20f883e', '', null, '', '', '1', '0', '0', '', null, '63');
 
 -- ----------------------------
 -- Table structure for jsh_userbusiness
@@ -1599,7 +1599,7 @@ CREATE TABLE `jsh_userbusiness` (
   `BtnStr` varchar(2000) DEFAULT NULL COMMENT '按钮权限',
   `delete_Flag` varchar(1) DEFAULT '0' COMMENT '删除标记，0未删除，1删除',
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=68 DEFAULT CHARSET=utf8 COMMENT='用户/角色/模块关系表';
+) ENGINE=InnoDB AUTO_INCREMENT=68 DEFAULT CHARSET=utf8 COMMENT='Người dùng/Vai trò/模块关系表';
 
 -- ----------------------------
 -- Records of jsh_userbusiness
