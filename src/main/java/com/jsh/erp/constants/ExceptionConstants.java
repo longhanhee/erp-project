@@ -17,59 +17,59 @@ public class ExceptionConstants {
      * 正常返回/操作成功
      **/
     public static final int SERVICE_SUCCESS_CODE = 200;
-    public static final String SERVICE_SUCCESS_MSG = "操作成功";
+    public static final String SERVICE_SUCCESS_MSG = "Hoạt động thành công";
     /**
      * 数据查询异常
      */
     public static final int DATA_READ_FAIL_CODE = 300;
-    public static final String DATA_READ_FAIL_MSG = "数据查询异常";
+    public static final String DATA_READ_FAIL_MSG = "Ngoại lệ truy vấn dữ liệu";
     /**
      * 数据写入异常
      */
     public static final int DATA_WRITE_FAIL_CODE = 301;
-    public static final String DATA_WRITE_FAIL_MSG = "数据写入异常";
+    public static final String DATA_WRITE_FAIL_MSG = "Ngoại lệ ghi dữ liệu";
 
     /**
      * 系统运行时未知错误
      **/
     public static final int SERVICE_SYSTEM_ERROR_CODE = 500;
-    public static final String SERVICE_SYSTEM_ERROR_MSG = "未知异常";
+    public static final String SERVICE_SYSTEM_ERROR_MSG = "Bất thường không rõ";
 
     /**
      * 删除操作被拒绝，请联系管理员
      **/
     public static final int DELETE_REFUSED_CODE = 600;
-    public static final String DELETE_REFUSED_MSG = "删除操作被拒绝，请联系管理员";
+    public static final String DELETE_REFUSED_MSG = "Xóa hoạt động đã bị từ chối, vui lòng liên hệ với quản trị viên";
     /**
      * 检测到存在依赖数据，是否强制删除？
      **/
     public static final int DELETE_FORCE_CONFIRM_CODE = 601;
-    public static final String DELETE_FORCE_CONFIRM_MSG = "检测到存在依赖数据，是否强制删除？";
+    public static final String DELETE_FORCE_CONFIRM_MSG = "Dữ liệu phụ thuộc đã được phát hiện. Nó có bị xóa không?";
     /**
      * 用户信息
      * type = 5
      * */
     //添加用户信息失败
     public static final int USER_ADD_FAILED_CODE = 500000;
-    public static final String USER_ADD_FAILED_MSG = "添加用户信息失败";
+    public static final String USER_ADD_FAILED_MSG = "Thêm thông tin người dùng không thành công";
     //删除用户信息失败
     public static final int USER_DELETE_FAILED_CODE = 500001;
-    public static final String USER_DELETE_FAILED_MSG = "删除用户信息失败";
+    public static final String USER_DELETE_FAILED_MSG = "Không thể xóa thông tin người dùng";
     //修改用户信息失败
     public static final int USER_EDIT_FAILED_CODE = 500002;
-    public static final String USER_EDIT_FAILED_MSG = "修改用户信息失败";
+    public static final String USER_EDIT_FAILED_MSG = "Không thể sửa đổi thông tin người dùng";
     //用户名已存在
     public static final int USER_USER_NAME_ALREADY_EXISTS_CODE = 500003;
-    public static final String USER_USER_NAME_ALREADY_EXISTS_MSG = "用户名在本系统已存在";
+    public static final String USER_USER_NAME_ALREADY_EXISTS_MSG = "Tên người dùng đã tồn tại trên hệ thống này";
     //登录名已存在
     public static final int USER_LOGIN_NAME_ALREADY_EXISTS_CODE = 500003;
-    public static final String USER_LOGIN_NAME_ALREADY_EXISTS_MSG = "登录名在本系统已存在";
+    public static final String USER_LOGIN_NAME_ALREADY_EXISTS_MSG = "Tên đăng nhập đã tồn tại trên hệ thống này";
     //用户录入数量超出限制
     public static final int USER_OVER_LIMIT_FAILED_CODE = 500004;
-    public static final String USER_OVER_LIMIT_FAILED_MSG = "用户录入数量超出限制，请联系管理员续费";
+    public static final String USER_OVER_LIMIT_FAILED_MSG = "Số lượng mục nhập của người dùng vượt quá giới hạn, vui lòng liên hệ với quản trị viên để gia hạn";
     //此用户名限制使用
     public static final int USER_NAME_LIMIT_USE_CODE = 500004;
-    public static final String USER_NAME_LIMIT_USE_MSG = "此用户名限制使用";
+    public static final String USER_NAME_LIMIT_USE_MSG = "Tên người dùng này bị hạn chế";
 
     /**
      * 角色信息

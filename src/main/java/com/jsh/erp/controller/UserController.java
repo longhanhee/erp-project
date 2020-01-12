@@ -146,7 +146,7 @@ public class UserController {
             e.printStackTrace();
             logger.error(e.getMessage());
             res.code = 500;
-            res.data = "用户登录失败";
+            res.data = "Đăng nhập người dùng không thành công";
         }
         return res;
     }
